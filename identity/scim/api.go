@@ -46,7 +46,6 @@ func NewAPI(provider *Provider, opts ...Option) (*API, error) {
 
 	// Add standard middleware
 	router.Use(middleware.RequestID)
-	router.Use(middleware.RealIP)
 	router.Use(middleware.Recoverer)
 	router.Use(api.loggerMiddleware)
 

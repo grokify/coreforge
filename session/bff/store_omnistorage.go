@@ -201,7 +201,7 @@ func toOmniSession(s *Session) (*omnisession.Session, error) {
 		UserAgent:             s.UserAgent,
 	}
 
-	dataBytes, err := json.Marshal(data)
+	dataBytes, err := json.Marshal(data) //nolint:gosec // G117: Internal session storage, not API response
 	if err != nil {
 		return nil, err
 	}

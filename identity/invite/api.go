@@ -54,7 +54,6 @@ func NewAPI(service Service, orgSvc organization.Service, config APIConfig) *API
 
 	router := chi.NewRouter()
 	router.Use(middleware.RequestID)
-	router.Use(middleware.RealIP)
 	router.Use(middleware.Recoverer)
 	router.Use(api.loggerMiddleware)
 

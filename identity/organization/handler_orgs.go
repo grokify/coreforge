@@ -132,6 +132,8 @@ type CheckSlugOutput struct {
 }
 
 // registerOrgEndpoints registers organization CRUD endpoints.
+//
+//nolint:dupl // Huma endpoint registration boilerplate - similar structure, different endpoints
 func (a *API) registerOrgEndpoints() {
 	basePath := a.config.BasePath
 

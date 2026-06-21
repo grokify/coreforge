@@ -179,7 +179,6 @@ func (s *Server) setupRouter() {
 
 	// Add standard middleware (must be before routes)
 	router.Use(middleware.RequestID)
-	router.Use(middleware.RealIP)
 	router.Use(middleware.Recoverer)
 	router.Use(s.loggerMiddleware)
 	router.Use(s.fositeInterceptor) // Intercept OAuth paths before Huma

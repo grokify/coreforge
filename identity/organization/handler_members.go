@@ -111,6 +111,8 @@ type TransferOwnershipResponse struct {
 }
 
 // registerMemberEndpoints registers membership management endpoints.
+//
+//nolint:dupl // Huma endpoint registration boilerplate - similar structure, different endpoints
 func (a *API) registerMemberEndpoints() {
 	basePath := a.config.BasePath
 
