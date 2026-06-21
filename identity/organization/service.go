@@ -64,6 +64,9 @@ type Service interface {
 
 	// GenerateSlug generates a unique slug from a name.
 	GenerateSlug(ctx context.Context, name string) (string, error)
+
+	// TransferOwnership transfers ownership of an organization to another principal.
+	TransferOwnership(ctx context.Context, input TransferOwnershipInput) error
 }
 
 // DefaultService implements the Service interface.
@@ -530,6 +533,97 @@ func (s *DefaultService) SlugAvailable(ctx context.Context, slug string) (bool, 
 		return false, fmt.Errorf("failed to check slug: %w", err)
 	}
 	return !exists, nil
+}
+
+// TransferOwnership transfers ownership of an organization to another principal.
+func (s *DefaultService) TransferOwnership(ctx context.Context, input TransferOwnershipInput) error {
+	// Validate the current owner
+	currentMembership, err := s.GetMembership(ctx, input.OrganizationID, input.FromPrincipal)
+	if err != nil {
+		return fmt.Errorf("current owner membership not found: %w", err)
+	}
+	if currentMembership.Role != RoleOwner {
+		return fmt.Errorf("principal is not the current owner")
+	}
+
+	// Validate the new owner is a member
+	newMembership, err := s.GetMembership(ctx, input.OrganizationID, input.ToPrincipal)
+	if err != nil {
+		return fmt.Errorf("new owner must be an existing member: %w", err)
+	}
+
+	// Default new role for old owner is admin
+	newRoleForOld := input.NewRoleForOld
+	if newRoleForOld == "" {
+		newRoleForOld = RoleAdmin
+	}
+	if newRoleForOld != RoleAdmin && newRoleForOld != RoleMember {
+		return fmt.Errorf("new role for previous owner must be 'admin' or 'member'")
+	}
+
+	// Start transaction
+	tx, err := s.client.Tx(ctx)
+	if err != nil {
+		return fmt.Errorf("failed to start transaction: %w", err)
+	}
+	defer func() {
+		if err != nil {
+			_ = tx.Rollback()
+		}
+	}()
+
+	// Update old owner's role
+	_, err = tx.PrincipalMembership.UpdateOneID(currentMembership.ID).
+		SetRole(newRoleForOld).
+		Save(ctx)
+	if err != nil {
+		return fmt.Errorf("failed to update old owner's role: %w", err)
+	}
+
+	// Update new owner's role
+	_, err = tx.PrincipalMembership.UpdateOneID(newMembership.ID).
+		SetRole(RoleOwner).
+		Save(ctx)
+	if err != nil {
+		return fmt.Errorf("failed to update new owner's role: %w", err)
+	}
+
+	// Update organization's owner principal ID
+	_, err = tx.Organization.UpdateOneID(input.OrganizationID).
+		SetOwnerPrincipalID(input.ToPrincipal).
+		Save(ctx)
+	if err != nil {
+		return fmt.Errorf("failed to update organization owner: %w", err)
+	}
+
+	if err = tx.Commit(); err != nil {
+		return fmt.Errorf("failed to commit transaction: %w", err)
+	}
+
+	// Sync role changes to authorization backend
+	// Update old owner's role
+	if syncErr := s.syncer.UpdateOrgMembership(ctx, input.FromPrincipal, input.OrganizationID, RoleOwner, newRoleForOld); syncErr != nil {
+		if s.syncMode == authz.SyncModeStrict {
+			return fmt.Errorf("failed to sync old owner role change to authz: %w", syncErr)
+		}
+		s.logger.Warn("failed to sync old owner role change to authz",
+			"principal_id", input.FromPrincipal,
+			"org_id", input.OrganizationID,
+			"error", syncErr)
+	}
+
+	// Update new owner's role
+	if syncErr := s.syncer.UpdateOrgMembership(ctx, input.ToPrincipal, input.OrganizationID, newMembership.Role, RoleOwner); syncErr != nil {
+		if s.syncMode == authz.SyncModeStrict {
+			return fmt.Errorf("failed to sync new owner role change to authz: %w", syncErr)
+		}
+		s.logger.Warn("failed to sync new owner role change to authz",
+			"principal_id", input.ToPrincipal,
+			"org_id", input.OrganizationID,
+			"error", syncErr)
+	}
+
+	return nil
 }
 
 // GenerateSlug generates a unique slug from a name.

@@ -121,3 +121,11 @@ type UpdateMemberInput struct {
 	Permissions []string
 	Active      *bool
 }
+
+// TransferOwnershipInput contains input for transferring organization ownership.
+type TransferOwnershipInput struct {
+	OrganizationID uuid.UUID
+	FromPrincipal  uuid.UUID // Current owner
+	ToPrincipal    uuid.UUID // New owner
+	NewRoleForOld  string    // Role for the previous owner (default: "admin")
+}

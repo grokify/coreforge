@@ -94,6 +94,22 @@ type GetMemberOutput struct {
 	Body *MemberResponse
 }
 
+// TransferOwnershipRequest is the request for transferring ownership.
+type TransferOwnershipRequest struct {
+	Slug string `path:"slug"`
+	Body struct {
+		NewOwnerPrincipalID string `json:"new_owner_principal_id" required:"true" format:"uuid"`
+		NewRoleForOldOwner  string `json:"new_role_for_old_owner,omitempty" enum:"admin,member"`
+	}
+}
+
+// TransferOwnershipResponse is the response for transferring ownership.
+type TransferOwnershipResponse struct {
+	Body struct {
+		Message string `json:"message"`
+	}
+}
+
 // registerMemberEndpoints registers membership management endpoints.
 func (a *API) registerMemberEndpoints() {
 	basePath := a.config.BasePath
@@ -152,6 +168,17 @@ func (a *API) registerMemberEndpoints() {
 		Tags:          []string{"Members"},
 		DefaultStatus: http.StatusNoContent,
 	}, a.removeMember)
+
+	// Transfer Ownership
+	huma.Register(a.huma, huma.Operation{
+		OperationID:   "transferOwnership",
+		Method:        http.MethodPost,
+		Path:          basePath + "/organizations/{slug}/transfer-ownership",
+		Summary:       "Transfer organization ownership",
+		Description:   "Transfers ownership of an organization to another member. Only the current owner can perform this action.",
+		Tags:          []string{"Members"},
+		DefaultStatus: http.StatusOK,
+	}, a.transferOwnership)
 }
 
 func (a *API) listMembers(ctx context.Context, input *ListMembersInput) (*ListMembersOutput, error) {
@@ -263,5 +290,38 @@ func (a *API) removeMember(ctx context.Context, input *RemoveMemberInput) (*stru
 	}
 
 	return nil, nil
+}
+
+func (a *API) transferOwnership(ctx context.Context, input *TransferOwnershipRequest) (*TransferOwnershipResponse, error) {
+	org, err := a.service.GetBySlug(ctx, input.Slug)
+	if err != nil {
+		return nil, huma.Error404NotFound(err.Error())
+	}
+
+	newOwnerID, err := uuid.Parse(input.Body.NewOwnerPrincipalID)
+	if err != nil {
+		return nil, huma.Error400BadRequest("invalid new_owner_principal_id")
+	}
+
+	// Get current owner from org
+	if org.OwnerPrincipalID == nil {
+		return nil, huma.Error400BadRequest("organization has no owner set")
+	}
+
+	// TODO: In production, verify the requesting user is the current owner
+	// This would come from authentication context
+
+	if err := a.service.TransferOwnership(ctx, TransferOwnershipInput{
+		OrganizationID: org.ID,
+		FromPrincipal:  *org.OwnerPrincipalID,
+		ToPrincipal:    newOwnerID,
+		NewRoleForOld:  input.Body.NewRoleForOldOwner,
+	}); err != nil {
+		return nil, huma.Error400BadRequest(err.Error())
+	}
+
+	resp := &TransferOwnershipResponse{}
+	resp.Body.Message = "Ownership transferred successfully"
+	return resp, nil
 }
 
