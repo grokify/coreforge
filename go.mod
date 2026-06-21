@@ -1,12 +1,12 @@
 module github.com/grokify/systemforge
 
-go 1.26.2
+go 1.26.4
 
 require (
 	entgo.io/ent v0.14.6
 	github.com/authzed/authzed-go v1.9.0
 	github.com/authzed/grpcutil v0.0.0-20260105210157-e237581949c2
-	github.com/authzed/spicedb v1.52.0
+	github.com/authzed/spicedb v1.54.0
 	github.com/danielgtaylor/huma/v2 v2.37.3
 	github.com/go-chi/chi/v5 v5.2.5
 	github.com/go-jose/go-jose/v3 v3.0.5
@@ -50,7 +50,6 @@ require (
 	github.com/KimMachineGun/automemlimit v0.7.5 // indirect
 	github.com/Masterminds/semver v1.5.0 // indirect
 	github.com/Masterminds/squirrel v1.5.4 // indirect
-	github.com/Yiling-J/theine-go v0.6.2 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.1 // indirect
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
@@ -144,7 +143,6 @@ require (
 	github.com/jzelinskie/cobrautil/v2 v2.0.0-20260331224425-513c88b62ffe // indirect
 	github.com/jzelinskie/stringz v0.0.3 // indirect
 	github.com/klauspost/compress v1.18.6 // indirect
-	github.com/klauspost/cpuid/v2 v2.3.0 // indirect
 	github.com/lann/builder v0.0.0-20180802200727-47ae307949d0 // indirect
 	github.com/lann/ps v0.0.0-20150810152359-62de8c46ede0 // indirect
 	github.com/lithammer/fuzzysearch v1.1.8 // indirect
@@ -163,7 +161,6 @@ require (
 	github.com/ory/go-convenience v0.1.0 // indirect
 	github.com/ory/pop/v6 v6.4.1 // indirect
 	github.com/ory/x v0.0.729 // indirect
-	github.com/outcaste-io/ristretto v0.2.3 // indirect
 	github.com/pb33f/ordered-map/v2 v2.3.1 // indirect
 	github.com/pbnjay/memory v0.0.0-20210728143218-7b4eea64cf58 // indirect
 	github.com/pelletier/go-toml/v2 v2.3.0 // indirect
@@ -198,7 +195,6 @@ require (
 	github.com/subosito/gotenv v1.6.0 // indirect
 	github.com/zclconf/go-cty v1.18.1 // indirect
 	github.com/zclconf/go-cty-yaml v1.2.0 // indirect
-	github.com/zeebo/xxh3 v1.1.0 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	go.opentelemetry.io/auto/sdk v1.2.1 // indirect
 	go.opentelemetry.io/contrib/detectors/gcp v1.43.0 // indirect
