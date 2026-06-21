@@ -80,6 +80,8 @@ nav:
     - JWT Audience: bff/audience.md
     - Ent Store: bff/ent-store.md
   - Session:
+    - Overview: session/index.md
+    - BFF Sessions: session/bff-sessions.md
     - Invalidation: session/invalidation.md
   - Multi-App:
     - Overview: multiapp/overview.md
