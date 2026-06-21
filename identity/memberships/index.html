@@ -384,7 +384,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../session/invalidation/" class="md-tabs__link">
+        <a href="../../session/" class="md-tabs__link">
           
   
   
@@ -504,7 +504,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../releases/v0.7.0/" class="md-tabs__link">
+        <a href="../../releases/v0.8.0/" class="md-tabs__link">
           
   
   
@@ -1080,6 +1080,66 @@
       Authorization Middleware
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ownership-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ownership Transfer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ownership Transfer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transaction-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaction Safety
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permission-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permission Requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1871,6 +1931,52 @@
   
   
     <li class="md-nav__item">
+      <a href="../../session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../session/bff-sessions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    BFF Sessions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../session/invalidation/" class="md-nav__link">
         
   
@@ -2581,6 +2687,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../releases/v0.8.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    v0.8.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../releases/v0.7.0/" class="md-nav__link">
         
   
@@ -3052,6 +3181,66 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ownership-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ownership Transfer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ownership Transfer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transaction-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaction Safety
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permission-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permission Requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3296,6 +3485,56 @@
 <a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="c1">// Usage</span>
 <a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="nx">r</span><span class="p">.</span><span class="nx">With</span><span class="p">(</span><span class="nx">RequireRole</span><span class="p">(</span><span class="s">&quot;owner&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;admin&quot;</span><span class="p">)).</span><span class="nx">Get</span><span class="p">(</span><span class="s">&quot;/settings&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">settingsHandler</span><span class="p">)</span>
 </code></pre></div>
+<h2 id="ownership-transfer">Ownership Transfer<a class="headerlink" href="#ownership-transfer" title="Permanent link">&para;</a></h2>
+<p>Transfer organization ownership from one member to another.</p>
+<h3 id="service-method">Service Method<a class="headerlink" href="#service-method" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">// TransferOwnershipInput contains input for transferring ownership.</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kd">type</span><span class="w"> </span><span class="nx">TransferOwnershipInput</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="nx">OrganizationID</span><span class="w"> </span><span class="nx">uuid</span><span class="p">.</span><span class="nx">UUID</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="nx">FromPrincipal</span><span class="w">  </span><span class="nx">uuid</span><span class="p">.</span><span class="nx">UUID</span><span class="w"> </span><span class="c1">// Current owner</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="nx">ToPrincipal</span><span class="w">    </span><span class="nx">uuid</span><span class="p">.</span><span class="nx">UUID</span><span class="w"> </span><span class="c1">// New owner</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="nx">NewRoleForOld</span><span class="w">  </span><span class="kt">string</span><span class="w">    </span><span class="c1">// Role for the previous owner (default: &quot;admin&quot;)</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="p">}</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="c1">// Transfer ownership</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">service</span><span class="p">.</span><span class="nx">TransferOwnership</span><span class="p">(</span><span class="nx">ctx</span><span class="p">,</span><span class="w"> </span><span class="nx">TransferOwnershipInput</span><span class="p">{</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">    </span><span class="nx">OrganizationID</span><span class="p">:</span><span class="w"> </span><span class="nx">orgID</span><span class="p">,</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">    </span><span class="nx">FromPrincipal</span><span class="p">:</span><span class="w">  </span><span class="nx">currentOwnerID</span><span class="p">,</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">    </span><span class="nx">ToPrincipal</span><span class="p">:</span><span class="w">    </span><span class="nx">newOwnerID</span><span class="p">,</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">    </span><span class="nx">NewRoleForOld</span><span class="p">:</span><span class="w">  </span><span class="s">&quot;admin&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// or &quot;member&quot;</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="p">})</span>
+</code></pre></div>
+<h3 id="validation-rules">Validation Rules<a class="headerlink" href="#validation-rules" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Current owner must have <code>owner</code> role</li>
+<li>New owner must be an existing member</li>
+<li>New role for old owner must be <code>admin</code> or <code>member</code></li>
+<li>Cannot transfer ownership to yourself</li>
+</ul>
+<h3 id="transaction-safety">Transaction Safety<a class="headerlink" href="#transaction-safety" title="Permanent link">&para;</a></h3>
+<p>Ownership transfer uses database transactions to ensure atomicity:</p>
+<ol>
+<li>Demote current owner to specified role (default: admin)</li>
+<li>Promote new owner to owner role</li>
+<li>Update organization's <code>owner_principal_id</code></li>
+<li>Sync changes to authorization backend</li>
+</ol>
+<h3 id="api-endpoint">API Endpoint<a class="headerlink" href="#api-endpoint" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>POST /organizations/{slug}/transfer-ownership
+</code></pre></div>
+<p><strong>Request Body:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">&quot;new_owner_principal_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;uuid&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nt">&quot;new_role_for_old_owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="p">}</span>
+</code></pre></div>
+<p><strong>Response:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">{</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">  </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ownership transferred successfully&quot;</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="permission-requirements">Permission Requirements<a class="headerlink" href="#permission-requirements" title="Permanent link">&para;</a></h3>
+<p>Only the current owner can transfer ownership. Admins and members cannot perform this action.</p>
 
 
 
