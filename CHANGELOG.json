@@ -7,6 +7,45 @@
   "maintainers": ["grokify"],
   "releases": [
     {
+      "version": "v0.8.0",
+      "date": "2026-06-21",
+      "highlights": [
+        { "description": "Organization ownership transfer with transaction-safe implementation" },
+        { "description": "OmniStorage session backend with Redis support and size limits" },
+        { "description": "SpiceDB API compatibility fix for v1.54.0+" }
+      ],
+      "added": [
+        { "description": "Organization ownership transfer functionality with TransferOwnership method", "commit": "7be89d8" },
+        { "description": "POST /organizations/{slug}/transfer-ownership API endpoint", "commit": "7be89d8" },
+        { "description": "TransferOwnershipInput type for transfer configuration", "commit": "7be89d8" },
+        { "description": "OmniStorage session store backend with memory and Redis support", "commit": "3493416" },
+        { "description": "Session size limits and per-user session limits with auto-eviction", "commit": "3493416" },
+        { "description": "Site isolation for multi-tenant session management", "commit": "3493416" }
+      ],
+      "fixed": [
+        { "description": "SpiceDB client API compatibility with v1.54.0+ using grpc.NewClient", "commit": "4aa41ae" }
+      ],
+      "documentation": [
+        { "description": "Session management overview with architecture diagram", "commit": "b3d0cd6" },
+        { "description": "BFF sessions documentation with store interface and backends", "commit": "b3d0cd6" },
+        { "description": "Ownership transfer documentation in memberships guide", "commit": "f7218a1" }
+      ],
+      "dependencies": [
+        { "description": "Bump go from 1.26.2 to 1.26.4", "commit": "0333e6b" },
+        { "description": "Bump github.com/authzed/authzed-go from 1.9.0 to 1.10.0", "commit": "0333e6b" },
+        { "description": "Bump github.com/authzed/spicedb from 1.52.0 to 1.54.0", "commit": "0333e6b" },
+        { "description": "Bump github.com/danielgtaylor/huma/v2 from 2.37.3 to 2.38.0", "commit": "0333e6b" },
+        { "description": "Bump github.com/go-chi/chi/v5 from 5.2.5 to 5.3.0", "commit": "0333e6b" },
+        { "description": "Bump github.com/jackc/pgx/v5 from 5.9.2 to 5.10.0", "commit": "0333e6b" },
+        { "description": "Bump github.com/mattn/go-sqlite3 from 1.14.44 to 1.14.46", "commit": "0333e6b" },
+        { "description": "Bump github.com/plexusone/omniobserve from 0.9.0 to 0.11.0", "commit": "b2a4c49" },
+        { "description": "Add github.com/plexusone/omnistorage-core v0.5.0", "commit": "b2a4c49" },
+        { "description": "Bump github.com/redis/go-redis/v9 from 9.19.0 to 9.20.1", "commit": "b2a4c49" },
+        { "description": "Bump golang.org/x/crypto from 0.50.0 to 0.53.0", "commit": "b2a4c49" },
+        { "description": "Bump google.golang.org/grpc from 1.81.0 to 1.81.1", "commit": "b2a4c49" }
+      ]
+    },
+    {
       "version": "v0.7.0",
       "date": "2026-05-10",
       "highlights": [

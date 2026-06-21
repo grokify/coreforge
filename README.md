@@ -17,6 +17,7 @@ SystemForge is a batteries-included Go platform module providing reusable identi
 - 👤 **Users** - Email, password hash (Argon2id), platform admin flag
 - 🏢 **Organizations** - Multi-tenant with name, slug, plan, settings
 - 🔗 **Memberships** - User-org relationships with flexible roles
+- 👑 **Ownership Transfer** - Transaction-safe organization ownership transfers
 - 🔐 **OAuth Accounts** - External OAuth provider links (GitHub, Google)
 - 🔑 **API Keys** - Machine-to-machine authentication with scopes
 
@@ -34,6 +35,7 @@ SystemForge is a batteries-included Go platform module providing reusable identi
 - 🎫 **JWT Service** - Access/refresh token generation with HS256/RS256/ES256
 - 🔒 **DPoP (RFC 9449)** - Proof-of-possession token binding
 - 🖥️ **BFF Pattern** - Backend for Frontend with server-side sessions
+- 💾 **OmniStorage Backend** - Production session storage with Redis, size limits, and observability
 - 🌐 **OAuth Handlers** - GitHub and Google social login
 - 🛡️ **Middleware** - JWT Bearer and API key authentication
 
