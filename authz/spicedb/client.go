@@ -132,14 +132,17 @@ func newEmbeddedClient(ctx context.Context, cfg Config, logger *slog.Logger) (*C
 	// Give server time to start
 	time.Sleep(100 * time.Millisecond)
 
-	// Get gRPC connection from running server with the preshared key for authentication
-	conn, err := runnableServer.GRPCDialContext(ctx,
+	// Connect to the running server via gRPC
+	conn, err := grpc.NewClient(address,
 		grpc.WithTransportCredentials(insecure.NewCredentials()),
 		grpcutil.WithInsecureBearerToken(presharedKey),
 	)
 	if err != nil {
 		return nil, fmt.Errorf("failed to dial embedded SpiceDB: %w", err)
 	}
+
+	// Suppress unused variable warning - server runs in background goroutine
+	_ = runnableServer
 
 	logger.Info("started embedded SpiceDB", "engine", engine)
 
