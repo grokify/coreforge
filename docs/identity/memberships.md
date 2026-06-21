@@ -236,3 +236,70 @@ func RequireRole(roles ...string) func(http.Handler) http.Handler {
 // Usage
 r.With(RequireRole("owner", "admin")).Get("/settings", settingsHandler)
 ```
+
+## Ownership Transfer
+
+Transfer organization ownership from one member to another.
+
+### Service Method
+
+```go
+// TransferOwnershipInput contains input for transferring ownership.
+type TransferOwnershipInput struct {
+    OrganizationID uuid.UUID
+    FromPrincipal  uuid.UUID // Current owner
+    ToPrincipal    uuid.UUID // New owner
+    NewRoleForOld  string    // Role for the previous owner (default: "admin")
+}
+
+// Transfer ownership
+err := service.TransferOwnership(ctx, TransferOwnershipInput{
+    OrganizationID: orgID,
+    FromPrincipal:  currentOwnerID,
+    ToPrincipal:    newOwnerID,
+    NewRoleForOld:  "admin", // or "member"
+})
+```
+
+### Validation Rules
+
+- Current owner must have `owner` role
+- New owner must be an existing member
+- New role for old owner must be `admin` or `member`
+- Cannot transfer ownership to yourself
+
+### Transaction Safety
+
+Ownership transfer uses database transactions to ensure atomicity:
+
+1. Demote current owner to specified role (default: admin)
+2. Promote new owner to owner role
+3. Update organization's `owner_principal_id`
+4. Sync changes to authorization backend
+
+### API Endpoint
+
+```
+POST /organizations/{slug}/transfer-ownership
+```
+
+**Request Body:**
+
+```json
+{
+  "new_owner_principal_id": "uuid",
+  "new_role_for_old_owner": "admin"
+}
+```
+
+**Response:**
+
+```json
+{
+  "message": "Ownership transferred successfully"
+}
+```
+
+### Permission Requirements
+
+Only the current owner can transfer ownership. Admins and members cannot perform this action.
