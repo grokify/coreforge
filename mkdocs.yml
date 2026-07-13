@@ -115,3 +115,4 @@ nav:
   - Reference:
     - Ent Schemas: reference/schemas.md
     - API Reference: reference/api.md
+    - Interactive API Docs: reference/api-reference.html

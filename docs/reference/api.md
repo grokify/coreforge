@@ -1,5 +1,9 @@
 # API Reference
 
+!!! tip "Interactive API Documentation"
+    For an interactive API reference with request examples and a try-it-out feature,
+    see the [Scalar API Reference](api-reference.html).
+
 ## OAuth Endpoints
 
 ### Authorization Endpoint
