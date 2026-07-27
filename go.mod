@@ -1,12 +1,12 @@
 module github.com/grokify/systemforge
 
-go 1.26.4
+go 1.26.5
 
 require (
 	entgo.io/ent v0.14.6
 	github.com/authzed/authzed-go v1.10.0
 	github.com/authzed/grpcutil v0.0.0-20260105210157-e237581949c2
-	github.com/authzed/spicedb v1.54.0
+	github.com/authzed/spicedb v1.56.0
 	github.com/danielgtaylor/huma/v2 v2.39.0
 	github.com/go-chi/chi/v5 v5.3.1
 	github.com/go-jose/go-jose/v3 v3.0.5
