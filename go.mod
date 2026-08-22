@@ -18,7 +18,7 @@ require (
 	github.com/ory/fosite v0.49.0
 	github.com/plexusone/omniobserve v0.12.0
 	github.com/plexusone/omnistorage-core v0.5.1
-	github.com/redis/go-redis/v9 v9.21.0
+	github.com/redis/go-redis/v9 v9.22.0
 	github.com/spf13/cobra v1.10.2
 	github.com/stretchr/testify v1.12.1
 	github.com/stripe/stripe-go/v84 v84.4.1
