@@ -500,7 +500,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../releases/v0.8.0/" class="md-tabs__link">
+        <a href="../../releases/v0.9.0/" class="md-tabs__link">
           
   
   
@@ -1477,6 +1477,34 @@
     
   
     Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../authorization/query-policy-engines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Query Policy Engines
   
 
     
@@ -2752,6 +2780,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../releases/v0.9.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.9.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../releases/v0.8.0/" class="md-nav__link">
         
   
@@ -3531,6 +3587,11 @@
 <h1 id="trd-systemforge-authentication-authorization">TRD: SystemForge Authentication &amp; Authorization<a class="headerlink" href="#trd-systemforge-authentication-authorization" title="Permanent link">&para;</a></h1>
 <blockquote>
 <p><strong>Status</strong>: Implemented in v0.1.0</p>
+<p><strong>Update (v0.9.0)</strong>: The DPoP implementation was extracted to the standalone
+<a href="https://github.com/grokify/goauth"><code>github.com/grokify/goauth/dpop</code></a> package
+(API unchanged). SystemForge's <code>session/bff</code> layer now consumes it. The DPoP
+file paths below refer to the code's original location; it now lives in
+<code>goauth/dpop/</code>. The design described in this document is otherwise unchanged.</p>
 <p>This TRD defined the technical design for SystemForge authentication. The implementation follows this design with the following modules:</p>
 <table>
 <thead>
@@ -3542,19 +3603,19 @@
 <tbody>
 <tr>
 <td>DPoP Keys</td>
-<td><code>session/dpop/keys.go</code></td>
+<td><code>goauth/dpop/keys.go</code> (was <code>session/dpop/keys.go</code>)</td>
 </tr>
 <tr>
 <td>DPoP Proof</td>
-<td><code>session/dpop/proof.go</code></td>
+<td><code>goauth/dpop/proof.go</code> (was <code>session/dpop/proof.go</code>)</td>
 </tr>
 <tr>
 <td>DPoP Verifier</td>
-<td><code>session/dpop/verifier.go</code></td>
+<td><code>goauth/dpop/verifier.go</code> (was <code>session/dpop/verifier.go</code>)</td>
 </tr>
 <tr>
 <td>DPoP Middleware</td>
-<td><code>session/dpop/middleware.go</code></td>
+<td><code>goauth/dpop/middleware.go</code> (was <code>session/dpop/middleware.go</code>)</td>
 </tr>
 <tr>
 <td>BFF Session</td>

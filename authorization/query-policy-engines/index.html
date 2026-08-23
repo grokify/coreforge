@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://grokify.github.io/systemforge/getting-started/installation/">
+        <link rel="canonical" href="https://grokify.github.io/systemforge/authorization/query-policy-engines/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../integration/">
       
       
-        <link rel="next" href="../quickstart/">
+        <link rel="next" href="../../coreapi/overview/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Installation - SystemForge</title>
+        <title>Query Policy Engines - SystemForge</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#query-policy-engines" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Query Policy Engines
             
           </span>
         </div>
@@ -240,13 +240,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../getting-started/installation/" class="md-tabs__link">
           
   
   
@@ -322,11 +320,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../authorization/spicedb-setup/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../spicedb-setup/" class="md-tabs__link">
           
   
   
@@ -614,31 +614,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -656,7 +653,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -671,37 +668,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Installation
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../getting-started/installation/" class="md-nav__link">
         
   
   
@@ -717,142 +687,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Requirements
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-systemforge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install SystemForge
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-ent-cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Install Ent CLI
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Project Setup
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Project Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-1-new-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option 1: New Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-2-existing-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option 2: Existing Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Database Setup
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#generate-ent-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Generate Ent Code
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verify-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verify Installation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next Steps
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -865,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart/" class="md-nav__link">
+      <a href="../../getting-started/quickstart/" class="md-nav__link">
         
   
   
@@ -893,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuration/" class="md-nav__link">
+      <a href="../../getting-started/configuration/" class="md-nav__link">
         
   
   
@@ -1528,28 +1362,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1567,7 +1404,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1585,7 +1422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../authorization/spicedb-setup/" class="md-nav__link">
+      <a href="../spicedb-setup/" class="md-nav__link">
         
   
   
@@ -1613,7 +1450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../authorization/spicedb-schema/" class="md-nav__link">
+      <a href="../spicedb-schema/" class="md-nav__link">
         
   
   
@@ -1641,7 +1478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../authorization/integration/" class="md-nav__link">
+      <a href="../integration/" class="md-nav__link">
         
   
   
@@ -1666,10 +1503,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../authorization/query-policy-engines/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Query Policy Engines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1685,6 +1549,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Responsibilities
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resource-modeling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resource Modeling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#action-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Action Mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grokifyql-adapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GrokifyQL Adapter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enforcement-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enforcement Points
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3376,10 +3315,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
+  <a href="#responsibilities" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Requirements
+        Responsibilities
       
     </span>
   </a>
@@ -3387,10 +3326,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-systemforge" class="md-nav__link">
+  <a href="#resource-modeling" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install SystemForge
+        Resource Modeling
       
     </span>
   </a>
@@ -3398,10 +3337,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-ent-cli" class="md-nav__link">
+  <a href="#action-mapping" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install Ent CLI
+        Action Mapping
       
     </span>
   </a>
@@ -3409,49 +3348,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-setup" class="md-nav__link">
+  <a href="#grokifyql-adapter" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project Setup
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Project Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-1-new-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option 1: New Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-2-existing-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Option 2: Existing Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#database-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Database Setup
+        GrokifyQL Adapter
       
     </span>
   </a>
@@ -3459,32 +3359,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#generate-ent-code" class="md-nav__link">
+  <a href="#enforcement-points" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Generate Ent Code
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verify-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verify Installation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next Steps
+        Enforcement Points
       
     </span>
   </a>
@@ -3511,71 +3389,137 @@
   
 
 
-<h1 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h1>
-<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
+<h1 id="query-policy-engines">Query Policy Engines<a class="headerlink" href="#query-policy-engines" title="Permanent link">&para;</a></h1>
+<p>SystemForge authorization can be used by application query languages to enforce
+dataset, table, column, field, and semantic-model permissions. The query
+language remains responsible for parsing and structural safety; SystemForge
+provides the authorization decision bridge.</p>
+<p>UIForge and GrokifyQL are the current reference pattern:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>GrokifyQL text
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  -&gt; GrokifyQL AST
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  -&gt; application schema/catalog
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  -&gt; SystemForge authz.Authorizer
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  -&gt; GrokifyQL policy
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  -&gt; backend query provider
+</code></pre></div>
+<h2 id="responsibilities">Responsibilities<a class="headerlink" href="#responsibilities" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Query language</td>
+<td>Parse text, build AST, reject unsupported syntax</td>
+</tr>
+<tr>
+<td>Application catalog</td>
+<td>Define queryable sources, datasets, fields, and capabilities</td>
+</tr>
+<tr>
+<td>SystemForge</td>
+<td>Check principal/action/resource authorization</td>
+</tr>
+<tr>
+<td>SpiceDB</td>
+<td>Store relationships and evaluate permissions</td>
+</tr>
+<tr>
+<td>Backend provider</td>
+<td>Compile and execute approved ASTs with service-owned limits</td>
+</tr>
+</tbody>
+</table>
+<p>SystemForge should not parse SQL-like text. It should receive typed resources
+and actions from the application layer.</p>
+<h2 id="resource-modeling">Resource Modeling<a class="headerlink" href="#resource-modeling" title="Permanent link">&para;</a></h2>
+<p>For query engines, prefer concrete resources over attribute-only checks:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>analytics_source:&lt;source_id&gt;
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>analytics_dataset:&lt;dataset_id&gt;
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>analytics_field:&lt;field_id&gt;
+</code></pre></div>
+<p>Typical relationships:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>analytics_source:&lt;source_id&gt;#org@organization:&lt;org_id&gt;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>analytics_dataset:&lt;dataset_id&gt;#source@analytics_source:&lt;source_id&gt;
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>analytics_field:&lt;field_id&gt;#dataset@analytics_dataset:&lt;dataset_id&gt;
+</code></pre></div>
+<p>Typical permissions:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>definition analytics_dataset {
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    relation source: analytics_source
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    relation owner: principal
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    permission manage = owner + source-&gt;manage
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    permission read = manage + source-&gt;query
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    permission list = read
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    permission sort = read
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>}
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>definition analytics_field {
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    relation dataset: analytics_dataset
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    relation owner: principal
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    permission manage = owner + dataset-&gt;manage
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    permission read = manage + dataset-&gt;read
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    permission list = read
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    permission sort = read
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>}
+</code></pre></div>
+<h2 id="action-mapping">Action Mapping<a class="headerlink" href="#action-mapping" title="Permanent link">&para;</a></h2>
+<p>A query language can map AST usage to SystemForge actions:</p>
+<table>
+<thead>
+<tr>
+<th>Query usage</th>
+<th>SystemForge action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read dataset/table</td>
+<td><code>read</code></td>
+</tr>
+<tr>
+<td>Select/project field</td>
+<td><code>read</code></td>
+</tr>
+<tr>
+<td>Filter field</td>
+<td><code>list</code></td>
+</tr>
+<tr>
+<td>Sort or group field</td>
+<td><code>sort</code></td>
+</tr>
+<tr>
+<td>Manage source/model</td>
+<td><code>manage</code></td>
+</tr>
+</tbody>
+</table>
+<p>Applications can define stricter action names if needed, but they should stay
+stable because saved queries and dashboard widgets may depend on them.</p>
+<h2 id="grokifyql-adapter">GrokifyQL Adapter<a class="headerlink" href="#grokifyql-adapter" title="Permanent link">&para;</a></h2>
+<p>GrokifyQL provides an optional adapter module:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>go<span class="w"> </span>get<span class="w"> </span>github.com/grokify/grokifyql/authzsystemforge
+</code></pre></div>
+<p>The adapter accepts any SystemForge <code>authz.Authorizer</code>, including the SpiceDB
+provider, and returns a <code>grokifyql.Policy</code>. Applications supply the resource
+mapper that converts query entities and fields into their product-specific
+SystemForge resources.</p>
+<h2 id="enforcement-points">Enforcement Points<a class="headerlink" href="#enforcement-points" title="Permanent link">&para;</a></h2>
+<p>Check policy at every API boundary that accepts user-authored query text:</p>
 <ul>
-<li>Go 1.21 or later</li>
-<li>PostgreSQL 14 or later (recommended)</li>
-<li>Ent CLI (for code generation)</li>
+<li>when saving a query or Question</li>
+<li>when executing an ad-hoc query</li>
+<li>when rendering a dashboard widget backed by a saved query</li>
+<li>when refreshing alerts or scheduled reports</li>
 </ul>
-<h2 id="install-systemforge">Install SystemForge<a class="headerlink" href="#install-systemforge" title="Permanent link">&para;</a></h2>
-<p>Add SystemForge to your Go module:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>go<span class="w"> </span>get<span class="w"> </span>github.com/grokify/systemforge
-</code></pre></div>
-<h2 id="install-ent-cli">Install Ent CLI<a class="headerlink" href="#install-ent-cli" title="Permanent link">&para;</a></h2>
-<p>SystemForge uses <a href="https://entgo.io/">Ent</a> for database schemas. Install the CLI:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>go<span class="w"> </span>install<span class="w"> </span>entgo.io/ent/cmd/ent@latest
-</code></pre></div>
-<h2 id="project-setup">Project Setup<a class="headerlink" href="#project-setup" title="Permanent link">&para;</a></h2>
-<h3 id="option-1-new-project">Option 1: New Project<a class="headerlink" href="#option-1-new-project" title="Permanent link">&para;</a></h3>
-<p>Create a new project with SystemForge:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdir<span class="w"> </span>myapp<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>myapp
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>go<span class="w"> </span>mod<span class="w"> </span>init<span class="w"> </span>github.com/myorg/myapp
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Add SystemForge</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>go<span class="w"> </span>get<span class="w"> </span>github.com/grokify/systemforge
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Create your ent directory</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>ent/schema
-</code></pre></div>
-<h3 id="option-2-existing-project">Option 2: Existing Project<a class="headerlink" href="#option-2-existing-project" title="Permanent link">&para;</a></h3>
-<p>Add SystemForge to an existing project:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>go<span class="w"> </span>get<span class="w"> </span>github.com/grokify/systemforge
-</code></pre></div>
-<h2 id="database-setup">Database Setup<a class="headerlink" href="#database-setup" title="Permanent link">&para;</a></h2>
-<p>SystemForge uses PostgreSQL by default. Create a database:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">myapp</span><span class="p">;</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="n">myapp</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">PASSWORD</span><span class="w"> </span><span class="s1">&#39;your-secure-password&#39;</span><span class="p">;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">myapp</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">myapp</span><span class="p">;</span>
-</code></pre></div>
-<h2 id="generate-ent-code">Generate Ent Code<a class="headerlink" href="#generate-ent-code" title="Permanent link">&para;</a></h2>
-<p>If you're extending SystemForge schemas, generate the Ent code:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>ent
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>go<span class="w"> </span>generate<span class="w"> </span>./...
-</code></pre></div>
-<h2 id="verify-installation">Verify Installation<a class="headerlink" href="#verify-installation" title="Permanent link">&para;</a></h2>
-<p>Create a simple test to verify the installation:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">import</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="s">&quot;fmt&quot;</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="s">&quot;github.com/grokify/systemforge/identity/ent&quot;</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="p">)</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="c1">// This should compile without errors</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="nx">_</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">ent</span><span class="p">.</span><span class="nx">Client</span><span class="p">{}</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;SystemForge installed successfully!&quot;</span><span class="p">)</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="p">}</span>
-</code></pre></div>
-<p>Run:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>go<span class="w"> </span>run<span class="w"> </span>main.go
-</code></pre></div>
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../quickstart/">Quick Start</a> - Build your first SystemForge app</li>
-<li><a href="../configuration/">Configuration</a> - Configure SystemForge for your environment</li>
-</ul>
+<p>Persisted ASTs and compiled metadata are useful for audit and performance, but
+they do not replace current authorization checks. Relationships and roles can
+change after a query is saved.</p>
 
 
 
