@@ -2,14 +2,20 @@
 
 > **Status**: Implemented in v0.1.0
 >
+> **Update (v0.9.0)**: The DPoP implementation was extracted to the standalone
+> [`github.com/grokify/goauth/dpop`](https://github.com/grokify/goauth) package
+> (API unchanged). SystemForge's `session/bff` layer now consumes it. The DPoP
+> file paths below refer to the code's original location; it now lives in
+> `goauth/dpop/`. The design described in this document is otherwise unchanged.
+>
 > This TRD defined the technical design for SystemForge authentication. The implementation follows this design with the following modules:
 >
 > | Component | Implementation |
 > |-----------|----------------|
-> | DPoP Keys | `session/dpop/keys.go` |
-> | DPoP Proof | `session/dpop/proof.go` |
-> | DPoP Verifier | `session/dpop/verifier.go` |
-> | DPoP Middleware | `session/dpop/middleware.go` |
+> | DPoP Keys | `goauth/dpop/keys.go` (was `session/dpop/keys.go`) |
+> | DPoP Proof | `goauth/dpop/proof.go` (was `session/dpop/proof.go`) |
+> | DPoP Verifier | `goauth/dpop/verifier.go` (was `session/dpop/verifier.go`) |
+> | DPoP Middleware | `goauth/dpop/middleware.go` (was `session/dpop/middleware.go`) |
 > | BFF Session | `session/bff/session.go` |
 > | BFF Store | `session/bff/store.go`, `store_memory.go` |
 > | BFF Proxy | `session/bff/proxy.go` |

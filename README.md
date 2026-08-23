@@ -201,8 +201,10 @@ r.Use(middleware.JWT(svc))
 
 ### DPoP Token Binding
 
+DPoP (RFC 9449) lives in the standalone [`github.com/grokify/goauth/dpop`](https://github.com/grokify/goauth) package (moved out of SystemForge in v0.9.0). See the [goauth DPoP guide](https://grokify.github.io/goauth/guides/dpop/).
+
 ```go
-import "github.com/grokify/systemforge/session/dpop"
+import "github.com/grokify/goauth/dpop"
 
 // Generate DPoP key pair (BFF side)
 keyPair, err := dpop.GenerateKeyPair()
@@ -280,8 +282,7 @@ github.com/grokify/systemforge/
 │
 ├── session/               # Session management
 │   ├── jwt/               # JWT service with DPoP claims
-│   ├── dpop/              # DPoP proof-of-possession
-│   ├── bff/               # Backend for Frontend pattern
+│   ├── bff/               # Backend for Frontend pattern (DPoP via goauth/dpop)
 │   ├── oauth/             # Social login handlers
 │   ├── middleware/        # Auth middleware
 │   └── ratelimit/         # Rate limiting with observability

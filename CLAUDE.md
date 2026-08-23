@@ -31,3 +31,12 @@ multi-app infrastructure for Go SaaS applications.
 
 - UIForge/DashForge uses SystemForge as the bridge from GuardSQL policy checks
   to SpiceDB, via the `authzguardsql` adapter.
+
+## Session & DPoP
+
+- DPoP (RFC 9449) lives in `github.com/grokify/goauth/dpop`, **not** in
+  SystemForge. The former `session/dpop` package was extracted to goauth in
+  v0.9.0 so DPoP is usable independently of the session layer; the API is
+  unchanged. Don't recreate a local `session/dpop` — import `goauth/dpop`.
+- The `session/bff` layer still owns the session-binding glue (per-session key
+  pairs, proof injection on the reverse proxy) and depends on `goauth/dpop`.
