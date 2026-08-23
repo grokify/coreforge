@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/grokify/systemforge/session/dpop"
+	"github.com/grokify/goauth/dpop"
 )
 
 // ProxyConfig contains configuration for the API proxy.
@@ -104,8 +104,11 @@ func NewProxy(config ProxyConfig) (*Proxy, error) {
 
 	// Create reverse proxy for streaming responses
 	p.reverseProxy = &httputil.ReverseProxy{
-		Director: func(req *http.Request) {
-			p.rewriteRequest(req)
+		Rewrite: func(pr *httputil.ProxyRequest) {
+			// pr.Out is cloned from the inbound request with a derived context,
+			// so the session value set in Handler propagates to it and
+			// rewriteRequest can inject auth and DPoP headers.
+			p.rewriteRequest(pr.Out)
 		},
 		ModifyResponse: func(resp *http.Response) error {
 			p.modifyResponse(resp)

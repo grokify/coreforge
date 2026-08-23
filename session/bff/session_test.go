@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/session/dpop"
+	"github.com/grokify/goauth/dpop"
 )
 
 func TestNewSession(t *testing.T) {

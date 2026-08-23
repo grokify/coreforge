@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/session/dpop"
+	"github.com/grokify/goauth/dpop"
 )
 
 // Session represents a server-side session with stored tokens and DPoP keys.
