@@ -2,6 +2,11 @@
 
 This guide covers integrating SpiceDB authorization with your SystemForge application.
 
+For applications that expose SQL-like or domain-specific query languages, see
+[Query Policy Engines](query-policy-engines.md). That pattern keeps parsing and
+AST validation in the query language while using SystemForge and SpiceDB for
+principal/action/resource authorization decisions.
+
 ## Architecture Overview
 
 ```

@@ -44,6 +44,7 @@ SystemForge is a batteries-included Go platform module providing reusable identi
 - 👥 **RBAC/ReBAC** - Role and relationship-based access control
 - 🔐 **SpiceDB Provider** - Zanzibar-style fine-grained authorization
 - ✨ **Simple Provider** - Lightweight permission checking
+- 🧩 **Query Policy Bridge** - Use `authz.Authorizer` to feed safe query languages such as GrokifyQL
 - 🚧 **HTTP Middleware** - Route protection for Chi and stdlib
 
 ### Observability
@@ -355,6 +356,13 @@ mkdocs serve
 # Build static site
 mkdocs build
 ```
+
+Relevant authorization guides:
+
+- `docs/authorization/spicedb-setup.md`
+- `docs/authorization/spicedb-schema.md`
+- `docs/authorization/integration.md`
+- `docs/authorization/query-policy-engines.md`
 
 ## Contributing
 

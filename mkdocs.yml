@@ -71,6 +71,7 @@ nav:
     - SpiceDB Setup: authorization/spicedb-setup.md
     - SpiceDB Schema: authorization/spicedb-schema.md
     - Integration: authorization/integration.md
+    - Query Policy Engines: authorization/query-policy-engines.md
   - CoreAPI:
     - Overview: coreapi/overview.md
     - Policies: coreapi/policies.md

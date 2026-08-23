@@ -72,6 +72,12 @@ Use `ResourceSchema()` to generate schemas for your application's resources:
 schema := spicedb.ResourceSchema("project")
 ```
 
+Query engines and analytics products often need more granular resources than a
+single project/document type. Model queryable objects explicitly, for example
+`analytics_source`, `analytics_dataset`, and `analytics_field`, so field-level
+policy checks use concrete SpiceDB tuples. See
+[Query Policy Engines](query-policy-engines.md) for the recommended pattern.
+
 This produces:
 
 ```zed
