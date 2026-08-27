@@ -1,6 +1,6 @@
 module github.com/grokify/systemforge
 
-go 1.26.5
+go 1.26.6
 
 // github.com/authzed/cel-go v0.30.0 rewrote cel.NewStaticOptimizer to return
 // (*StaticOptimizer, error) instead of *StaticOptimizer, breaking the build
@@ -14,7 +14,7 @@ require (
 	entgo.io/ent v0.14.6
 	github.com/authzed/authzed-go v1.10.0
 	github.com/authzed/grpcutil v0.0.0-20260105210157-e237581949c2
-	github.com/authzed/spicedb v1.56.0
+	github.com/authzed/spicedb v1.56.1
 	github.com/danielgtaylor/huma/v2 v2.39.1
 	github.com/go-chi/chi/v5 v5.3.2
 	github.com/go-jose/go-jose/v3 v3.0.5
@@ -64,7 +64,7 @@ require (
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
 	github.com/apparentlymart/go-textseg/v17 v17.0.1 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
-	github.com/authzed/cel-go v0.20.2 // indirect
+	github.com/authzed/cel-go v0.32.0 // indirect
 	github.com/authzed/consistent v0.2.0 // indirect
 	github.com/authzed/ctxkey v0.1.0 // indirect
 	github.com/authzed/jitterbug v0.0.0-20260128162915-e97d76daaa24 // indirect
@@ -199,7 +199,6 @@ require (
 	github.com/spf13/pflag v1.0.10 // indirect
 	github.com/spf13/viper v1.21.0 // indirect
 	github.com/spiffe/go-spiffe/v2 v2.8.1 // indirect
-	github.com/stoewer/go-strcase v1.3.1 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
 	github.com/zclconf/go-cty v1.19.0 // indirect
 	github.com/zclconf/go-cty-yaml v1.2.0 // indirect
