@@ -10,6 +10,13 @@ go 1.26.6
 // until spicedb bumps its own cel-go requirement past this break.
 exclude github.com/authzed/cel-go v0.30.0
 
+// github.com/KimMachineGun/automemlimit v1.0.0 removed memlimit.SetGoMemLimitWithOpts,
+// breaking the build of github.com/jzelinskie/cobrautil/v2/cobraproclimits (pinned to
+// an unreleased pseudo-version that still calls it). `go get -u ./...` picks v1.0.0 up
+// anyway since MVS treats it as the latest available version. Exclude it until
+// cobrautil bumps its own automemlimit requirement past this break.
+exclude github.com/KimMachineGun/automemlimit v1.0.0
+
 require (
 	entgo.io/ent v0.14.6
 	github.com/authzed/authzed-go v1.10.0
