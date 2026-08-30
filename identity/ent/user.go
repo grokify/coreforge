@@ -10,7 +10,7 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/user"
+	"github.com/plexusone/systemforge/identity/ent/user"
 )
 
 // User is the model entity for the User schema.

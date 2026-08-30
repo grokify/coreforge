@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/authz"
-	"github.com/grokify/systemforge/identity/ent"
-	"github.com/grokify/systemforge/identity/principal"
+	"github.com/plexusone/systemforge/authz"
+	"github.com/plexusone/systemforge/identity/ent"
+	"github.com/plexusone/systemforge/identity/principal"
 )
 
 // IdentityService provides identity-related operations for the contract.

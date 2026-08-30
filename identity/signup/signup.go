@@ -3,8 +3,8 @@ package signup
 
 import (
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/organization"
-	"github.com/grokify/systemforge/identity/principal"
+	"github.com/plexusone/systemforge/identity/organization"
+	"github.com/plexusone/systemforge/identity/principal"
 )
 
 // SignupInput contains input for signing up a new user.

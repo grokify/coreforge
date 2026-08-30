@@ -13,8 +13,8 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/oauthapp"
-	"github.com/grokify/systemforge/identity/ent/oauthappsecret"
+	"github.com/plexusone/systemforge/identity/ent/oauthapp"
+	"github.com/plexusone/systemforge/identity/ent/oauthappsecret"
 )
 
 // OAuthAppSecretCreate is the builder for creating a OAuthAppSecret entity.

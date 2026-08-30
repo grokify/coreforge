@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/grokify/systemforge/identity/ent"
-	"github.com/grokify/systemforge/identity/ent/listing"
+	"github.com/plexusone/systemforge/identity/ent"
+	"github.com/plexusone/systemforge/identity/ent/listing"
 )
 
 // EntListingService is an Ent-backed implementation of ListingService.

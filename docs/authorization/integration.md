@@ -35,7 +35,7 @@ import (
     "context"
     "log/slog"
 
-    "github.com/grokify/systemforge/authz/spicedb"
+    "github.com/plexusone/systemforge/authz/spicedb"
 )
 
 func initAuthz(ctx context.Context) (*spicedb.Client, *spicedb.Provider, *spicedb.Syncer, error) {

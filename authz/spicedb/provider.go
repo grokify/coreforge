@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/authz"
+	"github.com/plexusone/systemforge/authz"
 )
 
 // Provider implements the authz.Authorizer interface using SpiceDB.

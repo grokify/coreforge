@@ -17,7 +17,7 @@ This package handles the client-side of OAuth flows where your app is the **rely
 ### 1. Configure OAuth Provider
 
 ```go
-import cfoauth "github.com/grokify/systemforge/identity/oauthclient"
+import cfoauth "github.com/plexusone/systemforge/identity/oauthclient"
 
 // GitHub configuration
 githubCfg := cfoauth.GitHubConfig(cfoauth.ProviderConfig{
@@ -137,7 +137,7 @@ import (
     "context"
     "net/http"
 
-    cfoauth "github.com/grokify/systemforge/identity/oauthclient"
+    cfoauth "github.com/plexusone/systemforge/identity/oauthclient"
 )
 
 type AuthHandler struct {
@@ -238,7 +238,7 @@ oauth2Config := ccConfig.OAuth2Config()
 After OAuth callback, generate your app's session tokens:
 
 ```go
-import cfjwt "github.com/grokify/systemforge/session/jwt"
+import cfjwt "github.com/plexusone/systemforge/session/jwt"
 
 func (h *AuthHandler) GitHubCallback(w http.ResponseWriter, r *http.Request) {
     // ... OAuth validation and user fetch ...

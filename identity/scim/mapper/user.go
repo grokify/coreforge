@@ -6,9 +6,9 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/grokify/systemforge/identity"
-	"github.com/grokify/systemforge/identity/scim"
-	"github.com/grokify/systemforge/identity/scim/patch"
+	"github.com/plexusone/systemforge/identity"
+	"github.com/plexusone/systemforge/identity/scim"
+	"github.com/plexusone/systemforge/identity/scim/patch"
 )
 
 // UserMapper maps between SCIM User resources and SystemForge User entities.

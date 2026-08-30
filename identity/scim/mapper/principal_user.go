@@ -7,9 +7,9 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/grokify/systemforge/identity/principal"
-	"github.com/grokify/systemforge/identity/scim"
-	"github.com/grokify/systemforge/identity/scim/patch"
+	"github.com/plexusone/systemforge/identity/principal"
+	"github.com/plexusone/systemforge/identity/scim"
+	"github.com/plexusone/systemforge/identity/scim/patch"
 )
 
 // ErrInvalidPrincipalType is returned when attempting to map a non-human principal to SCIM User.

@@ -12,11 +12,11 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/license"
-	"github.com/grokify/systemforge/identity/ent/listing"
-	"github.com/grokify/systemforge/identity/ent/organization"
-	"github.com/grokify/systemforge/identity/ent/predicate"
-	"github.com/grokify/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/ent/license"
+	"github.com/plexusone/systemforge/identity/ent/listing"
+	"github.com/plexusone/systemforge/identity/ent/organization"
+	"github.com/plexusone/systemforge/identity/ent/predicate"
+	"github.com/plexusone/systemforge/identity/ent/principal"
 )
 
 // ListingUpdate is the builder for updating Listing entities.

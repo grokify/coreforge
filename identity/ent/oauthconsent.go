@@ -11,9 +11,9 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/oauthapp"
-	"github.com/grokify/systemforge/identity/ent/oauthconsent"
-	"github.com/grokify/systemforge/identity/ent/user"
+	"github.com/plexusone/systemforge/identity/ent/oauthapp"
+	"github.com/plexusone/systemforge/identity/ent/oauthconsent"
+	"github.com/plexusone/systemforge/identity/ent/user"
 )
 
 // OAuthConsent is the model entity for the OAuthConsent schema.

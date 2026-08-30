@@ -11,7 +11,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/grokify/systemforge/productgraph"
+	"github.com/plexusone/systemforge/productgraph"
 	"github.com/plexusone/omniobserve/observops"
 )
 

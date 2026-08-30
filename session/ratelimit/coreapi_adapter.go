@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/grokify/systemforge/coreapi"
-	"github.com/grokify/systemforge/session/middleware"
+	"github.com/plexusone/systemforge/coreapi"
+	"github.com/plexusone/systemforge/session/middleware"
 )
 
 // CoreAPIResolver adapts coreapi.PolicyStore to the LimitResolver interface.

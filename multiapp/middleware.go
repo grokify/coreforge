@@ -3,9 +3,9 @@ package multiapp
 import (
 	"net/http"
 
-	"github.com/grokify/systemforge/rls"
-	"github.com/grokify/systemforge/session/jwt"
-	"github.com/grokify/systemforge/session/middleware"
+	"github.com/plexusone/systemforge/rls"
+	"github.com/plexusone/systemforge/session/jwt"
+	"github.com/plexusone/systemforge/session/middleware"
 )
 
 // MiddlewareConfig configures the multiapp middleware stack.

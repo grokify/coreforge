@@ -4,7 +4,7 @@ package mapper
 import (
 	"context"
 
-	"github.com/grokify/systemforge/identity/scim/patch"
+	"github.com/plexusone/systemforge/identity/scim/patch"
 )
 
 // Mapper defines the interface for mapping between SCIM resources and SystemForge entities.

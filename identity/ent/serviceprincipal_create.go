@@ -13,8 +13,8 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/principal"
-	"github.com/grokify/systemforge/identity/ent/serviceprincipal"
+	"github.com/plexusone/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/ent/serviceprincipal"
 )
 
 // ServicePrincipalCreate is the builder for creating a ServicePrincipal entity.

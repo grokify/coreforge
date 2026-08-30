@@ -10,10 +10,10 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/license"
-	"github.com/grokify/systemforge/identity/ent/listing"
-	"github.com/grokify/systemforge/identity/ent/organization"
-	"github.com/grokify/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/ent/license"
+	"github.com/plexusone/systemforge/identity/ent/listing"
+	"github.com/plexusone/systemforge/identity/ent/organization"
+	"github.com/plexusone/systemforge/identity/ent/principal"
 )
 
 // License is the model entity for the License schema.

@@ -402,7 +402,7 @@ package schema
 
 import (
     "entgo.io/ent"
-    "github.com/grokify/systemforge/identity/ent/mixin"
+    "github.com/plexusone/systemforge/identity/ent/mixin"
 )
 
 // BFFSession holds the schema definition.
@@ -438,7 +438,7 @@ package auth
 
 import (
     "context"
-    "github.com/grokify/systemforge/session/bff"
+    "github.com/plexusone/systemforge/session/bff"
     "myapp/internal/ent"
 )
 

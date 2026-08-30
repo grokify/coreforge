@@ -5,7 +5,7 @@ SystemForge is configured through Go structs and environment variables.
 ## OAuth Configuration
 
 ```go
-import "github.com/grokify/systemforge/identity/oauth"
+import "github.com/plexusone/systemforge/identity/oauth"
 
 cfg := &oauth.Config{
     // Required: The base URL of your OAuth server
@@ -30,7 +30,7 @@ cfg := &oauth.Config{
 SystemForge uses Ent with PostgreSQL:
 
 ```go
-import "github.com/grokify/systemforge/identity/ent"
+import "github.com/plexusone/systemforge/identity/ent"
 
 // Connection string
 dsn := fmt.Sprintf(
@@ -87,7 +87,7 @@ app, _ := client.OAuthApp.Create().
 SystemForge uses Argon2id for password hashing:
 
 ```go
-import "github.com/grokify/systemforge/identity"
+import "github.com/plexusone/systemforge/identity"
 
 // Hash a password
 hash, err := identity.HashPassword("user-password")

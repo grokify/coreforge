@@ -322,7 +322,7 @@ Apply SystemForge to Dashforge.
 - `app2/go.mod`
 
 **Acceptance Criteria**:
-- [ ] Add github.com/grokify/systemforge dependency
+- [ ] Add github.com/plexusone/systemforge dependency
 - [ ] Run go mod tidy
 - [ ] Verify build succeeds
 

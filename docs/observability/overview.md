@@ -17,7 +17,7 @@ Import the observability package and the provider you want to use:
 
 ```go
 import (
-    "github.com/grokify/systemforge/observability"
+    "github.com/plexusone/systemforge/observability"
     _ "github.com/plexusone/omniobserve/observops/otlp"     // OTLP
     // or
     _ "github.com/plexusone/omniobserve/observops/datadog"  // Datadog
@@ -236,8 +236,8 @@ SystemForge integrates with [ProductGraph](https://github.com/plexusone/productg
 
 ```go
 import (
-    "github.com/grokify/systemforge/observability"
-    "github.com/grokify/systemforge/productgraph"
+    "github.com/plexusone/systemforge/observability"
+    "github.com/plexusone/systemforge/productgraph"
 )
 
 // Create observability instance

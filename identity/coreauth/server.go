@@ -12,7 +12,7 @@ import (
 	"github.com/danielgtaylor/huma/v2/adapters/humachi"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	"github.com/grokify/systemforge/observability"
+	"github.com/plexusone/systemforge/observability"
 	"github.com/ory/fosite"
 	"github.com/ory/fosite/compose"
 	"github.com/ory/fosite/handler/openid"
@@ -188,7 +188,7 @@ func (s *Server) setupRouter() {
 	config.Info.Description = "OAuth 2.0 Authorization Server with OpenID Connect support"
 	config.Info.Contact = &huma.Contact{
 		Name: "SystemForge",
-		URL:  "https://github.com/grokify/systemforge",
+		URL:  "https://github.com/plexusone/systemforge",
 	}
 	config.Info.License = &huma.License{
 		Name: "MIT",

@@ -10,8 +10,8 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/oauthaccount"
-	"github.com/grokify/systemforge/identity/ent/user"
+	"github.com/plexusone/systemforge/identity/ent/oauthaccount"
+	"github.com/plexusone/systemforge/identity/ent/user"
 )
 
 // OAuthAccount is the model entity for the OAuthAccount schema.

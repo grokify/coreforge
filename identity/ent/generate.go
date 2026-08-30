@@ -11,7 +11,7 @@ import (
 
 func main() {
 	err := entc.Generate("./schema", &gen.Config{
-		Package: "github.com/grokify/systemforge/identity/ent",
+		Package: "github.com/plexusone/systemforge/identity/ent",
 		Features: []gen.Feature{
 			gen.FeatureUpsert,
 			gen.FeaturePrivacy,

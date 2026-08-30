@@ -10,8 +10,8 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/human"
-	"github.com/grokify/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/ent/human"
+	"github.com/plexusone/systemforge/identity/ent/principal"
 )
 
 // Human is the model entity for the Human schema.

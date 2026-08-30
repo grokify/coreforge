@@ -7,9 +7,9 @@ import (
 
 	"github.com/danielgtaylor/huma/v2"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent"
-	entprincipal "github.com/grokify/systemforge/identity/ent/principal"
-	"github.com/grokify/systemforge/identity/principal"
+	"github.com/plexusone/systemforge/identity/ent"
+	entprincipal "github.com/plexusone/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/principal"
 )
 
 // registerIdentityEndpoints registers identity endpoints.

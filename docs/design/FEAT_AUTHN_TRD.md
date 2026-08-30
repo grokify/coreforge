@@ -417,7 +417,7 @@ import (
     "time"
 
     "github.com/google/uuid"
-    "github.com/grokify/systemforge/session/dpop"
+    "github.com/plexusone/systemforge/session/dpop"
 )
 
 // Session represents a BFF session
@@ -562,7 +562,7 @@ import (
     "net/http"
     "net/url"
 
-    "github.com/grokify/systemforge/session/dpop"
+    "github.com/plexusone/systemforge/session/dpop"
 )
 
 // Proxy proxies requests to the API with DPoP injection

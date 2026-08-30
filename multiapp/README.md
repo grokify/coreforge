@@ -160,7 +160,7 @@ package multiapp
 import (
     "github.com/grokify/myapp/ent"
     "github.com/grokify/myapp/internal/api"
-    cfmultiapp "github.com/grokify/systemforge/multiapp"
+    cfmultiapp "github.com/plexusone/systemforge/multiapp"
 )
 
 type Backend struct {
@@ -241,7 +241,7 @@ package main
 
 import (
     "github.com/grokify/app1/internal/multiapp"
-    cfmultiapp "github.com/grokify/systemforge/multiapp"
+    cfmultiapp "github.com/plexusone/systemforge/multiapp"
 )
 
 func main() {

@@ -11,8 +11,8 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/application"
-	"github.com/grokify/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/ent/application"
+	"github.com/plexusone/systemforge/identity/ent/principal"
 )
 
 // Application is the model entity for the Application schema.

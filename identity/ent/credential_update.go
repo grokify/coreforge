@@ -13,9 +13,9 @@ import (
 	"entgo.io/ent/dialect/sql/sqljson"
 	"entgo.io/ent/schema/field"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/credential"
-	"github.com/grokify/systemforge/identity/ent/predicate"
-	"github.com/grokify/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/ent/credential"
+	"github.com/plexusone/systemforge/identity/ent/predicate"
+	"github.com/plexusone/systemforge/identity/ent/principal"
 )
 
 // CredentialUpdate is the builder for updating Credential entities.

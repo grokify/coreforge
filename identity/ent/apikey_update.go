@@ -13,10 +13,10 @@ import (
 	"entgo.io/ent/dialect/sql/sqljson"
 	"entgo.io/ent/schema/field"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/apikey"
-	"github.com/grokify/systemforge/identity/ent/organization"
-	"github.com/grokify/systemforge/identity/ent/predicate"
-	"github.com/grokify/systemforge/identity/ent/user"
+	"github.com/plexusone/systemforge/identity/ent/apikey"
+	"github.com/plexusone/systemforge/identity/ent/organization"
+	"github.com/plexusone/systemforge/identity/ent/predicate"
+	"github.com/plexusone/systemforge/identity/ent/user"
 )
 
 // APIKeyUpdate is the builder for updating APIKey entities.

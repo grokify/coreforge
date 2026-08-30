@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/grokify/systemforge/productgraph"
+	"github.com/plexusone/systemforge/productgraph"
 )
 
 // ProductGraphConfig holds ProductGraph-specific configuration.

@@ -19,8 +19,8 @@ SystemForge provides reusable identity, session, RBAC, and OAuth 2.0 functionali
 package main
 
 import (
-    "github.com/grokify/systemforge/identity/ent"
-    "github.com/grokify/systemforge/identity/oauth"
+    "github.com/plexusone/systemforge/identity/ent"
+    "github.com/plexusone/systemforge/identity/oauth"
 )
 
 func main() {

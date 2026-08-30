@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/grokify/systemforge/identity/ent"
-	"github.com/grokify/systemforge/identity/invite"
-	"github.com/grokify/systemforge/identity/organization"
-	"github.com/grokify/systemforge/identity/principal"
+	"github.com/plexusone/systemforge/identity/ent"
+	"github.com/plexusone/systemforge/identity/invite"
+	"github.com/plexusone/systemforge/identity/organization"
+	"github.com/plexusone/systemforge/identity/principal"
 )
 
 // Service defines the signup service interface.

@@ -46,8 +46,8 @@ CoreAPI provides API management capabilities including rate limiting with policy
 
 ```go
 import (
-    "github.com/grokify/systemforge/coreapi"
-    "github.com/grokify/systemforge/session/ratelimit"
+    "github.com/plexusone/systemforge/coreapi"
+    "github.com/plexusone/systemforge/session/ratelimit"
 )
 
 // 1. Create policy store

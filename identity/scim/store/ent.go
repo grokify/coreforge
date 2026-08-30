@@ -9,13 +9,13 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
 
-	"github.com/grokify/systemforge/identity/ent"
-	"github.com/grokify/systemforge/identity/ent/membership"
-	"github.com/grokify/systemforge/identity/ent/organization"
-	"github.com/grokify/systemforge/identity/ent/predicate"
-	"github.com/grokify/systemforge/identity/ent/user"
-	"github.com/grokify/systemforge/identity/scim"
-	"github.com/grokify/systemforge/identity/scim/filter"
+	"github.com/plexusone/systemforge/identity/ent"
+	"github.com/plexusone/systemforge/identity/ent/membership"
+	"github.com/plexusone/systemforge/identity/ent/organization"
+	"github.com/plexusone/systemforge/identity/ent/predicate"
+	"github.com/plexusone/systemforge/identity/ent/user"
+	"github.com/plexusone/systemforge/identity/scim"
+	"github.com/plexusone/systemforge/identity/scim/filter"
 )
 
 // EntStore implements the scim.Store interface using Ent ORM.

@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/grokify/guardsql"
-	"github.com/grokify/systemforge/authz"
+	"github.com/plexusone/systemforge/authz"
 )
 
 type mockAuthorizer struct {

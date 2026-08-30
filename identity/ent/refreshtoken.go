@@ -10,8 +10,8 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/refreshtoken"
-	"github.com/grokify/systemforge/identity/ent/user"
+	"github.com/plexusone/systemforge/identity/ent/refreshtoken"
+	"github.com/plexusone/systemforge/identity/ent/user"
 )
 
 // RefreshToken is the model entity for the RefreshToken schema.

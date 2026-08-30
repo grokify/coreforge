@@ -8,22 +8,22 @@
 [![Visualization][viz-svg]][viz-url]
 [![License][license-svg]][license-url]
 
- [go-ci-svg]: https://github.com/grokify/systemforge/actions/workflows/go-ci.yaml/badge.svg?branch=main
- [go-ci-url]: https://github.com/grokify/systemforge/actions/workflows/go-ci.yaml
- [go-lint-svg]: https://github.com/grokify/systemforge/actions/workflows/go-lint.yaml/badge.svg?branch=main
- [go-lint-url]: https://github.com/grokify/systemforge/actions/workflows/go-lint.yaml
- [go-sast-svg]: https://github.com/grokify/systemforge/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
- [go-sast-url]: https://github.com/grokify/systemforge/actions/workflows/go-sast-codeql.yaml
- [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/grokify/systemforge
- [docs-godoc-url]: https://pkg.go.dev/github.com/grokify/systemforge
+ [go-ci-svg]: https://github.com/plexusone/systemforge/actions/workflows/go-ci.yaml/badge.svg?branch=main
+ [go-ci-url]: https://github.com/plexusone/systemforge/actions/workflows/go-ci.yaml
+ [go-lint-svg]: https://github.com/plexusone/systemforge/actions/workflows/go-lint.yaml/badge.svg?branch=main
+ [go-lint-url]: https://github.com/plexusone/systemforge/actions/workflows/go-lint.yaml
+ [go-sast-svg]: https://github.com/plexusone/systemforge/actions/workflows/go-sast-codeql.yaml/badge.svg?branch=main
+ [go-sast-url]: https://github.com/plexusone/systemforge/actions/workflows/go-sast-codeql.yaml
+ [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/systemforge
+ [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/systemforge
  [docs-mkdoc-svg]: https://img.shields.io/badge/Go-dev%20guide-blue.svg
- [docs-mkdoc-url]: https://grokify.github.io/systemforge
+ [docs-mkdoc-url]: https://plexusone.github.io/systemforge
  [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
- [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=grokify%2Fsystemforge
- [loc-svg]: https://tokei.rs/b1/github/grokify/systemforge
- [repo-url]: https://github.com/grokify/systemforge
+ [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=plexusone%2Fsystemforge
+ [loc-svg]: https://tokei.rs/b1/github/plexusone/systemforge
+ [repo-url]: https://github.com/plexusone/systemforge
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/grokify/systemforge/blob/main/LICENSE
+ [license-url]: https://github.com/plexusone/systemforge/blob/main/LICENSE
 
 SystemForge is a batteries-included Go platform module providing reusable identity, session, authorization, and feature flags for multi-tenant SaaS applications. Think of it as Django/Laravel-style conveniences for Go.
 
@@ -102,7 +102,7 @@ SystemForge is a batteries-included Go platform module providing reusable identi
 ## Installation
 
 ```bash
-go get github.com/grokify/systemforge
+go get github.com/plexusone/systemforge
 ```
 
 ## Quick Start
@@ -119,7 +119,7 @@ package main
 import (
     "context"
 
-    "github.com/grokify/systemforge/identity/ent"
+    "github.com/plexusone/systemforge/identity/ent"
     _ "github.com/lib/pq"
 )
 
@@ -154,7 +154,7 @@ package schema
 import (
     "entgo.io/ent"
     "entgo.io/ent/schema/field"
-    cfmixin "github.com/grokify/systemforge/identity/ent/mixin"
+    cfmixin "github.com/plexusone/systemforge/identity/ent/mixin"
 )
 
 type User struct {
@@ -180,8 +180,8 @@ func (User) Fields() []ent.Field {
 
 ```go
 import (
-    "github.com/grokify/systemforge/session/jwt"
-    "github.com/grokify/systemforge/session/middleware"
+    "github.com/plexusone/systemforge/session/jwt"
+    "github.com/plexusone/systemforge/session/middleware"
 )
 
 // Create JWT service
@@ -228,7 +228,7 @@ result, err := verifier.Verify(proofJWT, dpop.VerificationRequest{
 ### BFF Pattern
 
 ```go
-import "github.com/grokify/systemforge/session/bff"
+import "github.com/plexusone/systemforge/session/bff"
 
 // Create BFF proxy
 proxy := bff.NewProxy(bff.ProxyConfig{
@@ -245,8 +245,8 @@ r.Handle("/api/*", proxy.Handler())
 
 ```go
 import (
-    "github.com/grokify/systemforge/authz"
-    "github.com/grokify/systemforge/authz/simple"
+    "github.com/plexusone/systemforge/authz"
+    "github.com/plexusone/systemforge/authz/simple"
 )
 
 // Create authorization provider
@@ -272,7 +272,7 @@ r.With(mw.RequireAction(authz.ResourceType("users"), authz.ActionRead)).Get("/us
 ## Module Structure
 
 ```
-github.com/grokify/systemforge/
+github.com/plexusone/systemforge/
 ├── identity/              # User, Organization, Membership, OAuth
 │   ├── ent/schema/        # Ent schemas with cf_ prefix
 │   ├── apikey/            # API key service

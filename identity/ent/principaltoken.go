@@ -11,9 +11,9 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/application"
-	"github.com/grokify/systemforge/identity/ent/principal"
-	"github.com/grokify/systemforge/identity/ent/principaltoken"
+	"github.com/plexusone/systemforge/identity/ent/application"
+	"github.com/plexusone/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/ent/principaltoken"
 )
 
 // PrincipalToken is the model entity for the PrincipalToken schema.

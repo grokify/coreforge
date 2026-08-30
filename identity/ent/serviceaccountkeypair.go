@@ -10,8 +10,8 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/serviceaccount"
-	"github.com/grokify/systemforge/identity/ent/serviceaccountkeypair"
+	"github.com/plexusone/systemforge/identity/ent/serviceaccount"
+	"github.com/plexusone/systemforge/identity/ent/serviceaccountkeypair"
 )
 
 // ServiceAccountKeyPair is the model entity for the ServiceAccountKeyPair schema.

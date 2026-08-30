@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/grokify/systemforge/identity/scim"
+	"github.com/plexusone/systemforge/identity/scim"
 )
 
 func TestExtensionMapperToSCIM(t *testing.T) {

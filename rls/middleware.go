@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"net/http"
 
-	"github.com/grokify/systemforge/session/middleware"
+	"github.com/plexusone/systemforge/session/middleware"
 )
 
 // Middleware provides HTTP middleware that automatically sets PostgreSQL

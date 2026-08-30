@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/authz"
-	"github.com/grokify/systemforge/authz/spicedb"
+	"github.com/plexusone/systemforge/authz"
+	"github.com/plexusone/systemforge/authz/spicedb"
 )
 
 // TestIntegration_OrgMembership tests organization membership sync and authorization.

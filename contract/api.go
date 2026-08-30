@@ -56,7 +56,7 @@ func NewAPI(provider *Provider, opts ...Option) (*API, error) {
 	// Add contact info
 	config.Info.Contact = &huma.Contact{
 		Name: "SystemForge",
-		URL:  "https://github.com/grokify/systemforge",
+		URL:  "https://github.com/plexusone/systemforge",
 	}
 
 	// Add license

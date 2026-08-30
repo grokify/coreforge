@@ -8,7 +8,7 @@ SystemForge provides a complete API key management system:
 
 ```go
 import (
-    "github.com/grokify/systemforge/identity/apikey"
+    "github.com/plexusone/systemforge/identity/apikey"
 )
 
 // Create service with your store implementation
@@ -73,7 +73,7 @@ import (
     "crypto/sha256"
     "encoding/hex"
 
-    "github.com/grokify/systemforge/identity"
+    "github.com/plexusone/systemforge/identity"
 )
 
 // Generate a secure random key
@@ -264,7 +264,7 @@ package schema
 import (
     "entgo.io/ent"
     "entgo.io/ent/schema/edge"
-    "github.com/grokify/systemforge/identity/ent/mixin"
+    "github.com/plexusone/systemforge/identity/ent/mixin"
 )
 
 // APIKey holds the schema definition.
@@ -303,7 +303,7 @@ import (
     "time"
 
     "github.com/google/uuid"
-    "github.com/grokify/systemforge/identity/apikey"
+    "github.com/plexusone/systemforge/identity/apikey"
     "myapp/internal/ent"
     entapikey "myapp/internal/ent/apikey"
 )
@@ -468,7 +468,7 @@ func toAPIKey(k *ent.APIKey) *apikey.APIKey {
 // main.go or wire.go
 
 import (
-    "github.com/grokify/systemforge/identity/apikey"
+    "github.com/plexusone/systemforge/identity/apikey"
     "myapp/internal/auth"
 )
 
@@ -577,7 +577,7 @@ err := service.RecordUsage(ctx, keyID, clientIP)
 
 ```go
 import (
-    "github.com/grokify/systemforge/session/middleware"
+    "github.com/plexusone/systemforge/session/middleware"
 )
 
 // Use the built-in middleware

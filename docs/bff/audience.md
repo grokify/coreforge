@@ -35,7 +35,7 @@ Web App                    API Client
 ## Constants
 
 ```go
-import "github.com/grokify/systemforge/session/jwt"
+import "github.com/plexusone/systemforge/session/jwt"
 
 // Audience constants
 const (
@@ -50,7 +50,7 @@ const (
 
 ```go
 import (
-    "github.com/grokify/systemforge/session/jwt"
+    "github.com/plexusone/systemforge/session/jwt"
 )
 
 jwtService, _ := jwt.NewService(cfg)

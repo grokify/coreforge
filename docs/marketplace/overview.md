@@ -40,8 +40,8 @@ SystemForge provides a SaaS marketplace infrastructure with Stripe integration f
 
 ```go
 import (
-    "github.com/grokify/systemforge/marketplace"
-    "github.com/grokify/systemforge/marketplace/stripe"
+    "github.com/plexusone/systemforge/marketplace"
+    "github.com/plexusone/systemforge/marketplace/stripe"
 )
 
 // Create services with Ent client

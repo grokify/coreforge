@@ -7,7 +7,7 @@ import (
 	"entgo.io/ent/schema/edge"
 	"entgo.io/ent/schema/index"
 
-	"github.com/grokify/systemforge/identity/ent/mixin"
+	"github.com/plexusone/systemforge/identity/ent/mixin"
 )
 
 // Subscription holds the schema definition for a platform subscription.

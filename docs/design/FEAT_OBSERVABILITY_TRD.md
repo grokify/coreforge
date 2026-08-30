@@ -266,7 +266,7 @@ go get github.com/plexusone/omniobserve@latest
 ```go
 // Example usage
 import (
-    "github.com/grokify/systemforge/observability"
+    "github.com/plexusone/systemforge/observability"
     _ "github.com/plexusone/omniobserve/observops/otlp"     // or datadog, newrelic
 )
 

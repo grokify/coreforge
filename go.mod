@@ -1,4 +1,4 @@
-module github.com/grokify/systemforge
+module github.com/plexusone/systemforge
 
 go 1.26.6
 

@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/grokify/systemforge/observability"
+	"github.com/plexusone/systemforge/observability"
 )
 
 // Common errors returned by the rate limiter.

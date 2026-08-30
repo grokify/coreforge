@@ -3,7 +3,7 @@ package mapper
 import (
 	"context"
 
-	"github.com/grokify/systemforge/identity/scim"
+	"github.com/plexusone/systemforge/identity/scim"
 )
 
 // EnterpriseExtension contains enterprise user extension data.

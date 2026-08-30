@@ -1,7 +1,7 @@
 package marketplace
 
 import (
-	"github.com/grokify/systemforge/identity/ent"
+	"github.com/plexusone/systemforge/identity/ent"
 )
 
 // EntService is the Ent-backed implementation of the marketplace Service interface.

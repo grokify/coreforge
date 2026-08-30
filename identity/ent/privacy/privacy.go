@@ -5,7 +5,7 @@ package privacy
 import (
 	"context"
 
-	"github.com/grokify/systemforge/identity/ent"
+	"github.com/plexusone/systemforge/identity/ent"
 
 	"entgo.io/ent/entql"
 	"entgo.io/ent/privacy"

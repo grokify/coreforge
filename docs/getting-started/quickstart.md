@@ -13,8 +13,8 @@ import (
     "log"
     "net/http"
 
-    "github.com/grokify/systemforge/identity/ent"
-    "github.com/grokify/systemforge/identity/oauth"
+    "github.com/plexusone/systemforge/identity/ent"
+    "github.com/plexusone/systemforge/identity/oauth"
     _ "github.com/lib/pq"
 )
 

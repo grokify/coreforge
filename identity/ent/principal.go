@@ -11,12 +11,12 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/agent"
-	"github.com/grokify/systemforge/identity/ent/application"
-	"github.com/grokify/systemforge/identity/ent/human"
-	"github.com/grokify/systemforge/identity/ent/organization"
-	"github.com/grokify/systemforge/identity/ent/principal"
-	"github.com/grokify/systemforge/identity/ent/serviceprincipal"
+	"github.com/plexusone/systemforge/identity/ent/agent"
+	"github.com/plexusone/systemforge/identity/ent/application"
+	"github.com/plexusone/systemforge/identity/ent/human"
+	"github.com/plexusone/systemforge/identity/ent/organization"
+	"github.com/plexusone/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/ent/serviceprincipal"
 )
 
 // Principal is the model entity for the Principal schema.

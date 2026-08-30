@@ -6,8 +6,8 @@ import (
 	"github.com/ory/fosite"
 	"golang.org/x/crypto/argon2"
 
-	"github.com/grokify/systemforge/identity/ent"
-	"github.com/grokify/systemforge/identity/ent/oauthappsecret"
+	"github.com/plexusone/systemforge/identity/ent"
+	"github.com/plexusone/systemforge/identity/ent/oauthappsecret"
 )
 
 // Client implements fosite.Client backed by Ent OAuthApp.

@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/session/middleware"
+	"github.com/plexusone/systemforge/session/middleware"
 )
 
 // Middleware wraps an Authorizer for HTTP middleware use.

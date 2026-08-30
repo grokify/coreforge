@@ -12,9 +12,9 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/predicate"
-	"github.com/grokify/systemforge/identity/ent/serviceaccount"
-	"github.com/grokify/systemforge/identity/ent/serviceaccountkeypair"
+	"github.com/plexusone/systemforge/identity/ent/predicate"
+	"github.com/plexusone/systemforge/identity/ent/serviceaccount"
+	"github.com/plexusone/systemforge/identity/ent/serviceaccountkeypair"
 )
 
 // ServiceAccountKeyPairUpdate is the builder for updating ServiceAccountKeyPair entities.

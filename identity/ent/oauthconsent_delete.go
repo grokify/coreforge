@@ -8,8 +8,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/grokify/systemforge/identity/ent/oauthconsent"
-	"github.com/grokify/systemforge/identity/ent/predicate"
+	"github.com/plexusone/systemforge/identity/ent/oauthconsent"
+	"github.com/plexusone/systemforge/identity/ent/predicate"
 )
 
 // OAuthConsentDelete is the builder for deleting a OAuthConsent entity.

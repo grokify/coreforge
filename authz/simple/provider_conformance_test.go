@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/authz"
-	"github.com/grokify/systemforge/authz/providertest"
-	"github.com/grokify/systemforge/authz/simple"
+	"github.com/plexusone/systemforge/authz"
+	"github.com/plexusone/systemforge/authz/providertest"
+	"github.com/plexusone/systemforge/authz/simple"
 )
 
 // TestConformance runs the full conformance test suite for the simple provider.

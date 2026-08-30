@@ -24,7 +24,7 @@ The `cf_users` table contains:
 ### With Password
 
 ```go
-import "github.com/grokify/systemforge/identity"
+import "github.com/plexusone/systemforge/identity"
 
 // Hash the password
 hash, err := identity.HashPassword("secure-password")
@@ -108,7 +108,7 @@ user, err := client.User.UpdateOneID(userID).
 ### Verify Password
 
 ```go
-import "github.com/grokify/systemforge/identity"
+import "github.com/plexusone/systemforge/identity"
 
 user, _ := client.User.Query().
     Where(user.EmailEQ(email)).

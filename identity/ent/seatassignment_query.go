@@ -12,10 +12,10 @@ import (
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/license"
-	"github.com/grokify/systemforge/identity/ent/predicate"
-	"github.com/grokify/systemforge/identity/ent/principal"
-	"github.com/grokify/systemforge/identity/ent/seatassignment"
+	"github.com/plexusone/systemforge/identity/ent/license"
+	"github.com/plexusone/systemforge/identity/ent/predicate"
+	"github.com/plexusone/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/ent/seatassignment"
 )
 
 // SeatAssignmentQuery is the builder for querying SeatAssignment entities.

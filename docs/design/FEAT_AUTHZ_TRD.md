@@ -152,7 +152,7 @@ import (
     "context"
 
     v1 "github.com/authzed/authzed-go/proto/authzed/api/v1"
-    "github.com/grokify/systemforge/authz"
+    "github.com/plexusone/systemforge/authz"
 )
 
 // Provider implements authz.Provider using SpiceDB.
@@ -334,7 +334,7 @@ import (
     "context"
 
     v1 "github.com/authzed/authzed-go/proto/authzed/api/v1"
-    "github.com/grokify/systemforge/authz"
+    "github.com/plexusone/systemforge/authz"
 )
 
 // Syncer syncs relationships to SpiceDB.
@@ -685,8 +685,8 @@ import (
     "context"
 
     "entgo.io/ent"
-    "github.com/grokify/systemforge/authz"
-    "github.com/grokify/systemforge/authz/spicedb"
+    "github.com/plexusone/systemforge/authz"
+    "github.com/plexusone/systemforge/authz/spicedb"
 )
 
 // AuthzHooks creates Ent hooks for SpiceDB synchronization.
@@ -910,7 +910,7 @@ import (
     "sync"
     "time"
 
-    "github.com/grokify/systemforge/authz"
+    "github.com/plexusone/systemforge/authz"
 )
 
 // Cache caches permission check results.
@@ -1129,7 +1129,7 @@ import (
     "testing"
 
     "github.com/google/uuid"
-    "github.com/grokify/systemforge/authz"
+    "github.com/plexusone/systemforge/authz"
     "github.com/stretchr/testify/assert"
     "github.com/stretchr/testify/require"
 )

@@ -11,7 +11,7 @@
 Add SystemForge to your Go module:
 
 ```bash
-go get github.com/grokify/systemforge
+go get github.com/plexusone/systemforge
 ```
 
 ## Install Ent CLI
@@ -33,7 +33,7 @@ mkdir myapp && cd myapp
 go mod init github.com/myorg/myapp
 
 # Add SystemForge
-go get github.com/grokify/systemforge
+go get github.com/plexusone/systemforge
 
 # Create your ent directory
 mkdir -p ent/schema
@@ -44,7 +44,7 @@ mkdir -p ent/schema
 Add SystemForge to an existing project:
 
 ```bash
-go get github.com/grokify/systemforge
+go get github.com/plexusone/systemforge
 ```
 
 ## Database Setup
@@ -75,7 +75,7 @@ package main
 
 import (
     "fmt"
-    "github.com/grokify/systemforge/identity/ent"
+    "github.com/plexusone/systemforge/identity/ent"
 )
 
 func main() {

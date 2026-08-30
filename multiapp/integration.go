@@ -4,10 +4,10 @@ import (
 	"context"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/contract"
-	"github.com/grokify/systemforge/rls"
-	"github.com/grokify/systemforge/session/jwt"
-	"github.com/grokify/systemforge/session/middleware"
+	"github.com/plexusone/systemforge/contract"
+	"github.com/plexusone/systemforge/rls"
+	"github.com/plexusone/systemforge/session/jwt"
+	"github.com/plexusone/systemforge/session/middleware"
 )
 
 // This file provides integration helpers that bridge the multiapp context

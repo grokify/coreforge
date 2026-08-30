@@ -59,7 +59,7 @@
 ## Module Structure
 
 ```
-github.com/grokify/systemforge/
+github.com/plexusone/systemforge/
 ├── oauth/
 │   ├── app/
 │   │   ├── service.go          # OAuth app management

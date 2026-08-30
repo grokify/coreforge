@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/authz"
+	"github.com/plexusone/systemforge/authz"
 )
 
 // Provider implements the Authorizer interface using role hierarchy and permissions.

@@ -13,10 +13,10 @@ import (
 	"entgo.io/ent/dialect/sql/sqljson"
 	"entgo.io/ent/schema/field"
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent/oauthapp"
-	"github.com/grokify/systemforge/identity/ent/oauthtoken"
-	"github.com/grokify/systemforge/identity/ent/predicate"
-	"github.com/grokify/systemforge/identity/ent/user"
+	"github.com/plexusone/systemforge/identity/ent/oauthapp"
+	"github.com/plexusone/systemforge/identity/ent/oauthtoken"
+	"github.com/plexusone/systemforge/identity/ent/predicate"
+	"github.com/plexusone/systemforge/identity/ent/user"
 )
 
 // OAuthTokenUpdate is the builder for updating OAuthToken entities.

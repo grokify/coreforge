@@ -25,7 +25,7 @@ multi-app infrastructure for Go SaaS applications.
 - It previously lived as the nested `github.com/grokify/guardsql/authzsystemforge`
   module. It was consolidated into systemforge to remove the nested-module
   maintenance burden (fragile cross-module tagging). Consumers import
-  `github.com/grokify/systemforge/authzguardsql`.
+  `github.com/plexusone/systemforge/authzguardsql`.
 
 ## Cross-Repo Consumers
 

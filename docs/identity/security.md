@@ -18,7 +18,7 @@ The lockout package protects against brute-force password attacks by temporarily
 
 ```go
 import (
-    "github.com/grokify/systemforge/identity/security"
+    "github.com/plexusone/systemforge/identity/security"
 )
 
 // Create a memory store for development

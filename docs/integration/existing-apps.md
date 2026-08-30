@@ -22,7 +22,7 @@ Compose SystemForge mixins into your existing Ent schemas:
 
 ```go
 // your-app/ent/schema/user.go
-import cfmixin "github.com/grokify/systemforge/identity/ent/mixin"
+import cfmixin "github.com/plexusone/systemforge/identity/ent/mixin"
 
 type User struct {
     ent.Schema
@@ -66,7 +66,7 @@ func (UserProfile) Fields() []ent.Field {
 ### Step 1: Add Dependency
 
 ```bash
-go get github.com/grokify/systemforge
+go get github.com/plexusone/systemforge
 ```
 
 ### Step 2: Create SystemForge Tables
@@ -74,7 +74,7 @@ go get github.com/grokify/systemforge
 Run migrations to create `cf_*` tables:
 
 ```go
-import "github.com/grokify/systemforge/identity/ent"
+import "github.com/plexusone/systemforge/identity/ent"
 
 func migrate(ctx context.Context) error {
     cfClient, err := ent.Open("postgres", dsn)
@@ -200,7 +200,7 @@ DROP TABLE users;
 
 ```go
 import (
-    "github.com/grokify/systemforge/identity/oauth"
+    "github.com/plexusone/systemforge/identity/oauth"
 )
 
 func setupAuth(entClient *ent.Client) {

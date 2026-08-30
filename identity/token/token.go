@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/principal"
+	"github.com/plexusone/systemforge/identity/principal"
 )
 
 // Token represents a token record.

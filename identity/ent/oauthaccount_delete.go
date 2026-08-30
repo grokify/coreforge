@@ -8,8 +8,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/grokify/systemforge/identity/ent/oauthaccount"
-	"github.com/grokify/systemforge/identity/ent/predicate"
+	"github.com/plexusone/systemforge/identity/ent/oauthaccount"
+	"github.com/plexusone/systemforge/identity/ent/predicate"
 )
 
 // OAuthAccountDelete is the builder for deleting a OAuthAccount entity.

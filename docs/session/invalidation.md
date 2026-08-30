@@ -17,7 +17,7 @@ SystemForge provides a session invalidation package for tracking user sessions a
 
 ```go
 import (
-    "github.com/grokify/systemforge/session/invalidation"
+    "github.com/plexusone/systemforge/session/invalidation"
 )
 
 // Create a memory store

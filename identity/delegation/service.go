@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/grokify/systemforge/identity/ent"
-	"github.com/grokify/systemforge/identity/ent/agent"
-	entprincipal "github.com/grokify/systemforge/identity/ent/principal"
-	"github.com/grokify/systemforge/identity/principal"
+	"github.com/plexusone/systemforge/identity/ent"
+	"github.com/plexusone/systemforge/identity/ent/agent"
+	entprincipal "github.com/plexusone/systemforge/identity/ent/principal"
+	"github.com/plexusone/systemforge/identity/principal"
 )
 
 // DefaultService implements the Service interface.

@@ -22,8 +22,8 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/grokify/systemforge/multiapp"
-	"github.com/grokify/systemforge/multiapp/example"
+	"github.com/plexusone/systemforge/multiapp"
+	"github.com/plexusone/systemforge/multiapp/example"
 )
 
 func main() {

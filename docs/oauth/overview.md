@@ -64,8 +64,8 @@ SystemForge includes a full OAuth 2.0 server implementation using [Fosite](https
 
 ```go
 import (
-    "github.com/grokify/systemforge/identity/ent"
-    "github.com/grokify/systemforge/identity/oauth"
+    "github.com/plexusone/systemforge/identity/ent"
+    "github.com/plexusone/systemforge/identity/oauth"
 )
 
 // Create provider

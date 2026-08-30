@@ -138,7 +138,7 @@ func revokeTokenFamily(ctx context.Context, familyID uuid.UUID) error {
 ## Token Validation Middleware
 
 ```go
-import "github.com/grokify/systemforge/identity/oauth"
+import "github.com/plexusone/systemforge/identity/oauth"
 
 func main() {
     provider, _ := oauth.NewProvider(entClient, cfg)

@@ -7,7 +7,7 @@ import (
 
 	"github.com/grokify/guardsql"
 	gqlauthz "github.com/grokify/guardsql/authz"
-	"github.com/grokify/systemforge/authz"
+	"github.com/plexusone/systemforge/authz"
 )
 
 // ResourceBuilder maps GuardSQL entities and fields to SystemForge resources.

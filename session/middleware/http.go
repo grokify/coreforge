@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/grokify/systemforge/observability"
-	"github.com/grokify/systemforge/session/jwt"
+	"github.com/plexusone/systemforge/observability"
+	"github.com/plexusone/systemforge/session/jwt"
 )
 
 // HTTPAuth returns a standard http.Handler middleware that validates JWT tokens.

@@ -4,7 +4,7 @@ package scim
 import (
 	"time"
 
-	"github.com/grokify/systemforge/identity/scim/schema"
+	"github.com/plexusone/systemforge/identity/scim/schema"
 )
 
 // Schema URIs for SCIM resource types (re-exported from schema package for convenience).

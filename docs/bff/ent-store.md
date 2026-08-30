@@ -51,7 +51,7 @@ package schema
 import (
     "entgo.io/ent"
     "entgo.io/ent/schema/edge"
-    "github.com/grokify/systemforge/identity/ent/mixin"
+    "github.com/plexusone/systemforge/identity/ent/mixin"
 )
 
 // BFFSession holds the schema definition.
@@ -94,7 +94,7 @@ import (
     "time"
 
     "github.com/google/uuid"
-    "github.com/grokify/systemforge/session/bff"
+    "github.com/plexusone/systemforge/session/bff"
     "myapp/internal/ent"
     "myapp/internal/ent/bffsession"
 )
@@ -236,7 +236,7 @@ func (w *EntClientWrapper) CleanupExpiredBFFSessions(ctx context.Context, limit 
 // main.go or wire.go
 
 import (
-    "github.com/grokify/systemforge/session/bff"
+    "github.com/plexusone/systemforge/session/bff"
     "myapp/internal/auth"
 )
 

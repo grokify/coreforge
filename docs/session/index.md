@@ -70,7 +70,7 @@ For managing active sessions across devices:
 
 ```go
 import (
-    "github.com/grokify/systemforge/session/bff"
+    "github.com/plexusone/systemforge/session/bff"
 )
 
 // Create session store (using omnistorage for Redis support)

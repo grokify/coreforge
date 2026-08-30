@@ -466,9 +466,9 @@ import (
     "net/http"
 
     "github.com/go-chi/chi/v5"
-    "github.com/grokify/systemforge/observability"
-    "github.com/grokify/systemforge/observability/correlation"
-    "github.com/grokify/systemforge/productgraph"
+    "github.com/plexusone/systemforge/observability"
+    "github.com/plexusone/systemforge/observability/correlation"
+    "github.com/plexusone/systemforge/productgraph"
 )
 
 func main() {
