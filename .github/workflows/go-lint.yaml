@@ -24,4 +24,4 @@ on:
 
 jobs:
   lint:
-    uses: plexusone/.github/.github/workflows/go-lint.yaml@v0.1.1
+    uses: plexusone/.github/.github/workflows/go-lint.yaml@main

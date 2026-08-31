@@ -22,4 +22,4 @@ on:
 
 jobs:
   ci:
-    uses: plexusone/.github/.github/workflows/go-ci.yaml@v0.1.1
+    uses: plexusone/.github/.github/workflows/go-ci.yaml@main

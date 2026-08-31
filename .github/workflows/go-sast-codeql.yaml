@@ -26,4 +26,4 @@ on:
 
 jobs:
   sast:
-    uses: plexusone/.github/.github/workflows/go-sast-codeql.yaml@v0.1.1
+    uses: plexusone/.github/.github/workflows/go-sast-codeql.yaml@main
