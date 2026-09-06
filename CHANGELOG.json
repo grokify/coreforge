@@ -1,13 +1,74 @@
 {
  "irVersion": "1.0",
  "project": "systemforge",
- "repository": "https://github.com/grokify/systemforge",
+ "repository": "https://github.com/plexusone/systemforge",
  "versioning": "semver",
  "commitConvention": "conventional",
  "maintainers": [
   "grokify"
  ],
  "releases": [
+  {
+   "version": "v0.10.0",
+   "date": "2026-09-06",
+   "highlights": [
+    {
+     "description": "Module path moved from `github.com/grokify/systemforge` to `github.com/plexusone/systemforge`; the GitHub repository was transferred to the plexusone org"
+    },
+    {
+     "description": "Cross-app authorization vocabulary contract (`AppVocabulary`) and registry so Forge platform apps share one role/permission/scope convention"
+    },
+    {
+     "description": "Shared SpiceDB base schema (`principal`/`organization`/`platform`) with a composition helper for app-contributed fragments"
+    }
+   ],
+   "breaking": [
+    {
+     "description": "Module path changed to `github.com/plexusone/systemforge`. Update imports from `github.com/grokify/systemforge/...` to `github.com/plexusone/systemforge/...` (the API is unchanged); the old path still resolves via GitHub's repository-transfer redirect but will not receive new tags",
+     "commit": "852744b"
+    }
+   ],
+   "added": [
+    {
+     "description": "`authz.AppVocabulary` contract and `VocabularyRegistry` validating app-name format, `{app}:{resource}:{verb}` scope naming, role-hierarchy coverage, and `{app}_`-prefixed SpiceDB definitions",
+     "commit": "7886093"
+    },
+    {
+     "description": "`BaseSpiceDBSchema` and `VocabularyRegistry.ComposeSpiceDBSchema`, assembling the platform base plus every registered app fragment and rejecting duplicate definitions",
+     "commit": "d61bc4f"
+    }
+   ],
+   "fixed": [
+    {
+     "description": "Exclude `github.com/KimMachineGun/automemlimit` v1.0.0, which removed `memlimit.SetGoMemLimitWithOpts` and broke the build via `jzelinskie/cobrautil/v2/cobraproclimits`",
+     "commit": "a64fce1"
+    },
+    {
+     "description": "Reference the shared `plexusone/.github` CI workflows at `@main` (with `check-latest: true` added upstream) instead of a stale pinned tag, so `go.mod`'s required Go patch version resolves correctly",
+     "commit": "1e27a9a"
+    }
+   ],
+   "documentation": [
+    {
+     "description": "Publish the `INIT-SYSTEMFORGE-001` (unified Forge authorization/IAM/shell) and `INIT-SYSTEMFORGE-002` (grokify-to-plexusone migration) initiative specs",
+     "commit": "fd97642"
+    }
+   ],
+   "dependencies": [
+    {
+     "description": "Bump `github.com/authzed/spicedb` from 1.56.0 to 1.56.1",
+     "commit": "84b83e4"
+    },
+    {
+     "description": "Bump `google.golang.org/grpc` from 1.83.1 to 1.83.2",
+     "commit": "1c54f67"
+    },
+    {
+     "description": "Additional transitive dependency updates via `go get -u ./...`",
+     "commit": "c86ca67"
+    }
+   ]
+  },
   {
    "version": "v0.9.0",
    "date": "2026-08-23",
