@@ -12,7 +12,7 @@ info:
     - **Sessions** - BFF session management
   contact:
     name: SystemForge
-    url: https://github.com/grokify/systemforge
+    url: https://github.com/plexusone/systemforge
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
