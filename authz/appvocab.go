@@ -43,8 +43,30 @@ var (
 	appNameRe  = regexp.MustCompile(`^[a-z][a-z0-9]{1,31}$`)
 	scopeRe    = regexp.MustCompile(`^([a-z][a-z0-9]*):([a-z][a-z0-9-]*):([a-z][a-z0-9-]*)$`)
 	adminRe    = regexp.MustCompile(`^([a-z][a-z0-9]*):admin$`)
-	spiceDefRe = regexp.MustCompile(`(?m)^\s*definition\s+([A-Za-z_][A-Za-z0-9_]*)`)
+	spiceDefRe = regexp.MustCompile(`\bdefinition\s+([A-Za-z_][A-Za-z0-9_]*)`)
 )
+
+// findSchemaDefinitions returns every "definition NAME" declared in a SpiceDB
+// schema fragment. It strips "//" line comments first and matches on a word
+// boundary rather than line position — a fragment that packs more than one
+// definition onto a single physical line (e.g. "definition a {} definition
+// b {}") must not let the second one evade detection, since callers rely on
+// this to reject schema fragments that redefine reserved or foreign names.
+func findSchemaDefinitions(schema string) []string {
+	lines := strings.Split(schema, "\n")
+	for i, line := range lines {
+		if idx := strings.Index(line, "//"); idx >= 0 {
+			lines[i] = line[:idx]
+		}
+	}
+	stripped := strings.Join(lines, "\n")
+
+	var names []string
+	for _, m := range spiceDefRe.FindAllStringSubmatch(stripped, -1) {
+		names = append(names, m[1])
+	}
+	return names
+}
 
 // ValidateScope checks one scope against the "{app}:{resource}:{verb}" (or
 // "{app}:admin") convention for the given app.
@@ -69,8 +91,7 @@ func ValidateScope(app, scope string) error {
 // declares must be prefixed "{app}_", so fragments can never collide with the
 // shared base definitions or with another app. An empty schema is valid.
 func ValidateAppSchema(app, schema string) error {
-	for _, m := range spiceDefRe.FindAllStringSubmatch(schema, -1) {
-		name := m[1]
+	for _, name := range findSchemaDefinitions(schema) {
 		if !strings.HasPrefix(name, app+"_") {
 			return fmt.Errorf("authz: SpiceDB definition %q must be prefixed %q", name, app+"_")
 		}

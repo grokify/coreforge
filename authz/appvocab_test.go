@@ -136,6 +136,23 @@ func TestValidationFailures(t *testing.T) {
 	if err := ValidateVocabulary(unprefixed); err == nil {
 		t.Error("unprefixed definition (base collision) should fail")
 	}
+
+	// A second definition packed onto the same physical line as a
+	// legitimately-prefixed one must not evade detection.
+	smuggled := base
+	smuggled.schema = `definition actionforge_org { relation org: organization } definition organization { relation owner: principal }`
+	if err := ValidateVocabulary(smuggled); err == nil {
+		t.Error("unprefixed definition smuggled onto the same line as a valid one should fail")
+	}
+}
+
+func TestValidateAppSchemaIgnoresCommentedDefinitions(t *testing.T) {
+	// A "definition" mentioned only in a comment must not be treated as a
+	// real declaration (would otherwise reject valid schemas on prose).
+	schema := "// see definition of terms below\ndefinition actionforge_org {}"
+	if err := ValidateAppSchema("actionforge", schema); err != nil {
+		t.Errorf("comment mentioning \"definition\" should not affect validation: %v", err)
+	}
 }
 
 func TestComposeSpiceDBSchema(t *testing.T) {

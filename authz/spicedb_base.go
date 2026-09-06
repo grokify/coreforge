@@ -48,11 +48,7 @@ definition platform {
 
 // baseDefinitions are the reserved names owned by the base schema.
 func baseDefinitions() []string {
-	var names []string
-	for _, m := range spiceDefRe.FindAllStringSubmatch(BaseSpiceDBSchema, -1) {
-		names = append(names, m[1])
-	}
-	return names
+	return findSchemaDefinitions(BaseSpiceDBSchema)
 }
 
 // ComposeSpiceDBSchema assembles the deployment's full SpiceDB schema: the
@@ -79,8 +75,7 @@ func (r *VocabularyRegistry) ComposeSpiceDBSchema() (string, error) {
 		if strings.TrimSpace(fragment) == "" {
 			continue
 		}
-		for _, m := range spiceDefRe.FindAllStringSubmatch(fragment, -1) {
-			name := m[1]
+		for _, name := range findSchemaDefinitions(fragment) {
 			if owner, dup := seen[name]; dup {
 				return "", fmt.Errorf("authz: definition %q from app %q already defined by %s", name, app, owner)
 			}
